@@ -67,7 +67,7 @@ get_header();
 					<h3 class="light">マーケティング</h3>
 					<p class="light">どんな商材でもデジタルマーケティングは欠かせない時代になりました。
 テキスト広告、動画広告、SNS、コンテンツマーケティングなど様々な手法があります。売り上げを拡大するために最適なツールを商材に合わせてご提案し、サポートします。</p>
-					<a href="" class="white_button uk-margin-medium-top uk-hidden">詳しく見る<span uk-icon="arrow-right"></span></a>
+					<a href="/marketing/" class="white_button uk-margin-medium-top">詳しく見る<span uk-icon="arrow-right"></span></a>
 				</div>
 				<div class="uk-padding service2">
 					<img class="box_shadow" data-src="/wp-content/themes/advtheme/img/service2.jpg" alt="" uk-img>
@@ -84,7 +84,7 @@ get_header();
 					<p class="light">国境を越えてビジネスを展開したいとき、ネイティブがサービスを翻訳してそのまま展開するだけでは不十分な場合があります。
 わたしたちは単なるネイティブ翻訳サービスではありません。
 ターゲット地域の文化的背景に合わせ、あなたのサービスの魅力が最も伝わる表現へと進化させます。</p>
-					<a href="" class="white_button uk-margin-medium-top uk-hidden">詳しく見る<span uk-icon="arrow-right"></span></a>
+					<a href="/localization/" class="white_button uk-margin-medium-top">詳しく見る<span uk-icon="arrow-right"></span></a>
 				</div>
 			</div>
 		</div>

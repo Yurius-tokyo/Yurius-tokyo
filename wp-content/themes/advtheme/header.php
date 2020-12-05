@@ -65,6 +65,8 @@
 	            </div>
 	        </li>
 	        <li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ホームページ制作</a></li>
+					<li class="<?php $pagename==='marketing' && print 'uk-active' ;?>"><a href="/marketing/">マーケティング支援</a></li>
+					<li class="<?php $pagename==='localization' && print 'uk-active' ;?>"><a href="/localization/">翻訳</a></li>
 					<li class="<?php $pagename==='company' && print 'uk-active' ;?>"><a href="/company/">会社案内</a></li>
 	        <li><a href="/#contact">お見積もり</a></li>
 	    	</ul>
@@ -95,6 +97,9 @@
 	            </li>
 
 							<li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ホームページ制作</a></li>
+							<li class="<?php $pagename==='marketing' && print 'uk-active' ;?>"><a href="/marketing/">マーケティング支援</a></li>
+							<li class="<?php $pagename==='localization' && print 'uk-active' ;?>"><a href="/localization/">翻訳</a></li>
+							<hr />
 							<li class="<?php $pagename==='company' && print 'uk-active' ;?>"><a href="/company/">会社案内</a></li>
 			        <li><a href="/#contact">お見積もり</a></li>
 	        </ul>

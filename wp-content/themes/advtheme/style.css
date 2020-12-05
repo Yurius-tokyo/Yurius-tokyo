@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/*
+theme Name: advtheme
+Author: Yuri
+Description: Theme for website
+version： 1.0.0
+*/
+
+/*Use common.scss to edit */
+@import url("css/common.min.css");

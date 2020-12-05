@@ -1,0 +1,472 @@
+
+/* Override UI kit Variables here */
+$global-color:                                   #6816AB;
+$global-emphasis-color:                          #252535;
+$global-muted-color:                             #C4C4C4;
+
+$global-link-color:                              #3E0574;
+$global-link-hover-color:                        #0f6ecd;
+
+$global-inverse-color:                           #fff;
+
+$global-background:                              #FFFFFF;
+
+$global-muted-background:                        #f8f8f8 !default;
+$global-primary-background:                      #27004B;
+$global-secondary-background:                    #F8F8F8;
+
+$global-success-background:                      #32d296 !default;
+$global-warning-background:                      #faa05a !default;
+$global-danger-background:                       #f0506e !default;
+
+/* Variables */
+
+$imgDir: "../img/";
+
+@mixin screen-mobile {
+  @media screen and (max-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+/* Import */
+@import "../uikit/scss/variables-theme.scss";
+@import "../uikit/scss/mixins-theme.scss";
+@import "../uikit/scss/uikit-theme.scss";
+
+
+/* CSS */
+body{
+}
+.uk-heading-bullet::before{
+  border-color:#8bc34a;
+}
+
+/*common*/
+.light{
+	color: $global-inverse-color;
+	text-shadow:0px 0px 3px #000000;
+}
+.uk-overlay h3{
+	font-size: 18px;
+	font-family: 'Cinzel', serif;
+}
+.uk-overlay time{
+	font-size: 14px;
+}
+
+.post_thumb{
+  h3{
+    margin-top: 10px;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+  img{
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  }
+  &:hover img{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .post_media{
+    overflow: hidden;
+  }
+}
+
+.news_block{
+  &:hover{
+    text-decoration: none;
+  }
+}
+.wpforms-form button[type=submit]{
+}
+.anime-back{
+	width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.label_cat{
+  //font-size: $global-small-font-size;
+}
+.box_shadow{
+  box-shadow: -38px 35px 60px rgba(0, 0, 0, 0.25);
+}
+.white_button{
+  background: $global-inverse-color;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 30px;
+  transition: all 0.5s ease-out;
+  &:hover{
+    text-decoration: none;
+    background:$global-color;
+    color:$global-inverse-color;
+
+  }
+}
+.dark_button{
+  background: $global-color;
+  border-radius: 5px;
+  display: inline-block;
+  color: $global-inverse-color;
+  padding: 10px 30px;
+  transition: all 0.5s ease-out;
+  &:hover{
+    text-decoration: none;
+    background:$global-inverse-color;
+    color:$global-color;
+    border: 1px solid $global-color;
+  }
+}
+
+/* components */
+
+%main{
+  height: 100vh;
+  background: $global-primary-background;
+
+  position: relative;
+  h1,.uk-text-lead{
+    color: $global-inverse-color;
+  }
+}
+%service_list{
+  background: $global-secondary-background;
+  position: relative;
+  z-index: 1;
+  color: $global-emphasis-color;
+  &::after{
+    position: absolute;
+    content: url(../img/rect_corner2.svg);
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+  &::before{
+    position: absolute;
+    content: url(../img/rect_corner1.svg);
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+  }
+}
+#pricing{
+  color: $global-emphasis-color;
+  .price_box{
+    border-radius: 15px;
+    background: $global-secondary-background;
+    position: relative;
+    z-index: 0;
+    color: $global-emphasis-color;
+    padding-bottom: 100px;
+    &::before{
+      content: "";
+      position: absolute;
+      border-radius: 15px 15px 136.5px 136.5px;
+      background: #FFFFFF;
+      top: 0;
+      left:0;
+      width: 100%;
+      height: 200px;
+      z-index: -1;
+    }
+    h3,h4,.uk-icon{
+      color: $global-color;
+      font-weight: bold;
+    }
+    .price_inner{
+      z-index: 2
+    }
+    .dark_button{
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+/*header.php*/
+header {
+	z-index: 1;
+
+  &.uk-navbar-container:not(.uk-navbar-transparent){
+    background-color: $global-background;
+  }
+  &.uk-navbar-container:not(.uk-navbar-transparent).navbar_dark
+  {
+    background-color: $global-primary-background;
+  }
+  &.uk-navbar-transparent{
+    position: absolute;
+    width: 100%;
+  }
+  img#logo{
+  	height: 32px;
+  }
+
+  .uk-button{
+    border-radius: 32px;
+    background: $global-primary-background;
+    color: $global-inverse-color;
+  }
+  /* SP */
+  .uk-offcanvas-bar{
+    background: $global-primary-background;
+  }
+}
+
+@keyframes point {
+    from {
+        width:100px;
+        height: 100px;
+    }
+    to {
+      width:127px;
+      height: 127px;
+    }
+}
+
+/*index.php*/
+#main{
+	height: 100vh;
+  background-image: url($imgDir + "top_back.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .down_arrow{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: point 0.7s ease-out infinite alternate;
+    transition: all 0.5s ease-out;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  .text-box{
+    transform: rotate3d(-10,10,-1, 35deg);
+  }
+  h1, .uk-text-lead{
+  	color: #fff;
+  	text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+  h1{
+    font-size: 80px;
+  }
+}
+
+
+#latest_blogs{
+  .uk-card-media-top{
+    overflow: hidden;
+  }
+}
+#services{
+	background-color: $global-primary-background;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  >div>div{
+    position: relative;
+  }
+  .oval1,.oval2,.oval3{
+    position: absolute;
+    right: -20px;
+    top: 0;
+    z-index: -1;
+
+  }
+  .oval2{
+    left: -50px;
+    top: 217px;
+    width: 230px;
+    height: 230px;
+
+  }
+  .oval3{
+    width: 150px;
+    height: 150px;
+    top: 400px;
+    right: 300px;
+
+  }
+  .service1::after{
+    position: absolute;
+    content: url(../img/rectangle.svg);
+    width: 344px;
+    height: 478px;
+    left: -37px;
+    top: -60px;
+    z-index: -1;
+  }
+  .service2::after{
+    position: absolute;
+    content: url(../img/rectangle.svg);
+    width: 344px;
+    height: 478px;
+    right: -37px;
+    top: -60px;
+    z-index: -1;
+  }
+  .service3::after{
+    position: absolute;
+    content: url(../img/rectangle.svg);
+    width: 344px;
+    height: 478px;
+    left: -37px;
+    top: -60px;
+    z-index: -1;
+  }
+  @include screen-mobile {
+    .service1::after, .service2::after, .service3::after{
+      display: none;
+    }
+  }
+}
+
+#news{
+  .uk-card-default,.uk-card-default:hover{
+
+    p{color:$global-emphasis-color;}
+  }
+}
+
+#contact{
+  background: $global-secondary-background;
+}
+#contact .wpforms-container{
+	width: 80%;
+}
+#contact .wpforms-container form input{
+	width: 100%;
+	max-width: 100%;
+	height: 55px;
+	background: #fff;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+}
+#contact .wpforms-container form textarea{
+	background: #fff;
+	border: 1px solid #E0E0E0;
+  border-radius: 5px;
+}
+
+#contact .wpforms-container form .wpforms-submit-container{
+	text-align: center;
+}
+#contact .wpforms-container form .wpforms-submit-container button{
+	width: 60%;
+	height: 55px;
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  background: $global-color;
+  color: $global-inverse-color;
+  transition: all 0.5s ease-out;
+  &:hover{
+    text-decoration: none;
+    background:$global-inverse-color;
+    color:$global-color;
+    border: 1px solid #E0E0E0;
+  }
+}
+
+/*single.php*/
+#single{
+	background: none;
+}
+
+
+@media screen and (max-width: 750px) {
+	#article-visual{
+		height: 300px;
+	}
+}
+
+/*footer.php*/
+footer{
+  background-color: $global-primary-background;
+  color: $global-inverse-color;
+  h2,h3{
+    color: $global-inverse-color;
+  }
+  h2{
+    font-size: $global-large-font-size;
+  }
+}
+#copyright{
+  color: $global-emphasis-color;
+  padding: 32px;
+}
+
+
+/* web_development.php */
+
+#main_web{
+  @extend %main;
+  background-position: right;
+  background-image: url($imgDir + "web_illust.svg");
+  background-repeat: no-repeat;
+
+}
+@include screen-mobile {
+  #main_web{
+    background-image: none;
+  }
+}
+#dev_list{
+  @extend %service_list;
+}
+
+#portfolio{
+  background: $global-primary-background;
+  h2{
+    color:$global-inverse-color;
+  }
+}
+
+/* localization.php */
+#main_local{
+  @extend %main;
+
+}
+#local_list{
+  @extend %service_list;
+}
+
+/* marketing.php */
+#main_marketing{
+  @extend %main;
+}
+#marketing_list{
+  @extend %service_list;
+}
+
+/* company.php */
+
+#fact_sheet{
+  color: $global-emphasis-color;
+}
+#profile{
+  color: $global-emphasis-color;
+  min-height: 520px;
+  background: url($imgDir + "2block.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  #profile_inner{
+    height: 380px;
+  }
+  .profile_photo{
+    width: 200px;
+  }
+}

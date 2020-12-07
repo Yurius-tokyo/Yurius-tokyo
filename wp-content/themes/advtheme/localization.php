@@ -6,6 +6,8 @@ get_header();
 ?>
 
 	<section id="main_local" class="uk-section uk-section-default ">
+		<video class="back_video uk-blend-lighten" src="/wp-content/themes/advtheme/img/video1.mp4" loop muted autoplay></video>
+
 		<div class="uk-container uk-height-1-1 uk-flex uk-flex-middle">
 			<div class="uk-child-width-1-1@m uk-child-width-1-1@s" uk-grid>
 				<div class=" ">

@@ -26,7 +26,6 @@
 		<script src="/wp-content/themes/advtheme/uikit/js/uikit-icons.min.js"></script>
 
 		<!-- Plugins -->
-		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Allerta+Stencil|Amatic+SC|Cinzel|Cormorant+Garamond|El+Messiri|Fredericka+the+Great|Noto+Serif+TC" rel="stylesheet">
 
 		<?php wp_head(); ?>
 		<!-- Google Tag Manager -->
@@ -53,8 +52,8 @@
 				<ul class="uk-navbar-nav uk-nav-default uk-visible@m">
 
 	        <li>
-	            <a href="/" class=" uk-hidden">お役立ち記事</a>
-	            <div class="uk-navbar-dropdown">
+	            <li><a href="/tips/" class="">お役立ち記事</a></li>
+	            <div class="uk-navbar-dropdown uk-hidden">
 	                <ul class="uk-nav uk-navbar-dropdown-nav">
 	                    <li class="<?php $pagename==='' && print 'uk-active';?>"><a href="/">全て</a></li>
 	                    <li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">Web制作</a></li>
@@ -67,7 +66,7 @@
 	        <li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ホームページ制作</a></li>
 					<li class="<?php $pagename==='marketing' && print 'uk-active' ;?>"><a href="/marketing/">マーケティング支援</a></li>
 					<li class="<?php $pagename==='localization' && print 'uk-active' ;?>"><a href="/localization/">翻訳</a></li>
-					<li class="<?php $pagename==='company' && print 'uk-active' ;?>"><a href="/company/">会社案内</a></li>
+					<li class="<?php $pagename==='company' && print 'uk-active' ;?> uk-hidden"><a href="/company/">会社案内</a></li>
 	        <li><a href="/#contact">お見積もり</a></li>
 	    	</ul>
 				<div class="uk-navbar-item uk-visible@m">
@@ -86,8 +85,8 @@
 		    	<button class="uk-offcanvas-close" type="button" uk-close></button>
 	        <ul class="uk-nav uk-nav-default">
 							<li class="<?php $pagename==='home' && print 'uk-active' ;?>"><a href="/">トップ</a></li>
-	            <li class="uk-parent uk-hidden"><a href="/">お役立ち記事</a>
-	            	<ul class="uk-nav-sub">
+	            <li class="uk-parent"><a href="/tips/">お役立ち記事</a>
+	            	<ul class="uk-nav-sub uk-hidden">
 									<li class="<?php $pagename==='' && print 'uk-active';?>"><a href="/">全て</a></li>
 									<li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">Web制作</a></li>
 									<li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">ビジネス</a></li>

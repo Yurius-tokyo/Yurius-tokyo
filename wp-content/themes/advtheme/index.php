@@ -13,7 +13,7 @@ get_header();
 
 	</section>
 
-	<section id="latest_blogs" class="uk-section uk-hidden">
+	<section id="latest_blogs" class="uk-section">
 
 		<div class="uk-container">
 			<h2 class="uk-text-center">最新のコラム</h2>
@@ -21,12 +21,14 @@ get_header();
 				<?php
 					if(have_posts()): while(have_posts()): the_post();
 						$cat = get_the_category();
+						$excerpt = get_the_excerpt();
 						$cat_name = $cat[0]->cat_name;
 					?>
-					<a class="uk-inline post_thumb">
-						<div class="uk-card uk-card-default" href="<?php the_permalink(); ?>">
-							<div class="post_media uk-card-media-top">
-								<img src="<?php has_post_thumbnail()? the_post_thumbnail_url('yv-size') : print('/wp-content/themes/advtheme/img/blog.png'); ?>">
+					<a href="<?php the_permalink(); ?>" class="post_thumb uk-inline">
+						<div class="uk-card uk-card-default">
+							<div class="uk-card-media-top uk-cover-container post_media">
+								<img src="<?php has_post_thumbnail()? the_post_thumbnail_url() : print('/wp-content/themes/advtheme/img/blog.png'); ?>" uk-cover>
+								<canvas width="375" height="220"></canvas>
 
 							</div>
 							<div class="uk-card-body">
@@ -40,7 +42,7 @@ get_header();
 					wp_reset_postdata();?>
 			</div>
 			<div class="uk-margin-large-top uk-text-center ">
-				<a class="dark_button" href="">もっと見る</a>
+				<a class="dark_button" href="/tips/">もっと見る</a>
 			</div>
 		</div>
 	</section>

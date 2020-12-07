@@ -14,8 +14,8 @@
 				<div>
 					<h2 class="uk-link-text"><a href="/">アドベンチャーズ株式会社</a></h2>
 				</div>
-				<div class="uk-hidden">
-					<h3><a href="" class="uk-link-text">お役立ち記事</a></h3>
+				<div class="">
+					<h3><a href="/tips/" class="uk-link-text">お役立ち記事</a></h3>
 
 	    	</div>
 	    	<div>

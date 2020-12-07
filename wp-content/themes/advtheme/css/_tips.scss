@@ -1,0 +1,96 @@
+/* sidebar.php */
+
+#sidebar{
+  .sidebar-title{
+    font-size: $global-large-font-size;
+  }
+  .tag-cloud-link{
+    border: 2px solid $global-emphasis-color;
+    box-sizing: border-box;
+    padding: 3px;
+    color: $global-emphasis-color;
+
+  }
+  .popular-posts{
+    margin-top: 70px;
+  }
+  .wpp-list,.new_list{
+    padding-left: 0;
+    h3{
+      margin-top: 10px;
+    }
+    li{
+      h3 a{
+        color: $global-emphasis-color;
+      }
+      .category a{
+        color: $global-color;
+      }
+      a{
+        //color: $global-emphasis-color;
+        &.category{
+          color: $global-color;
+        }
+        &:hover{
+          animation: hoverEffect 0.25s ease-in-out forwards normal;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+}
+/*single.php*/
+
+#single{
+  color: $global-emphasis-color;
+
+  a{
+    color: $global-color;
+    &:hover{
+      animation: hoverEffect 0.25s ease-in-out forwards normal;
+      text-decoration: none;
+    }
+  }
+  .wp-block-code{
+    background: $global-emphasis-color;
+    color: $global-inverse-color;
+    border: 0px;
+  }
+  .wp-block-quote{
+    border-left: 3px solid $global-primary-background;
+    padding-left: 30px;
+  }
+  .post-content{
+    margin-top:25px;
+  }
+  #author{
+    &.uk-card{
+      background: $global-emphasis-color;
+      color: $global-inverse-color;
+    }
+    .uk-card-title{
+      color: $global-inverse-color;
+    }
+  }
+}
+#main_tips{
+  &.uk-section{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+#tips_list{
+  h1{
+    font-size: $global-large-font-size;
+  }
+  .uk-card-title{
+    margin-top: 10px;
+  }
+
+}
+#lead{
+  color: $global-emphasis-color;
+  font-size: $global-medium-font-size;
+  background: $global-muted-background;
+}

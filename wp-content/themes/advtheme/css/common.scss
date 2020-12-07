@@ -5,7 +5,7 @@ $global-emphasis-color:                          #252535;
 $global-muted-color:                             #C4C4C4;
 
 $global-link-color:                              #3E0574;
-$global-link-hover-color:                        #0f6ecd;
+$global-link-hover-color:                        #7F20CC;
 
 $global-inverse-color:                           #fff;
 
@@ -55,23 +55,32 @@ body{
 	font-size: 14px;
 }
 
+
+@keyframes hoverEffect{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.7;
+  }
+}
 .post_thumb{
   h3{
     margin-top: 10px;
   }
-  &:hover{
+  &:hover, a:hover{
     text-decoration: none;
+    animation: hoverEffect 0.25s ease-in-out forwards normal;
   }
   img{
-    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
-  }
-  &:hover img{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    //transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
   }
   .post_media{
     overflow: hidden;
+
+  }
+  p{
+    color: $global-emphasis-color;
   }
 }
 
@@ -123,13 +132,25 @@ body{
     border: 1px solid $global-color;
   }
 }
+.back_video{
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  max-width: none;
+}
 
 /* components */
 
 %main{
   height: 100vh;
   background: $global-primary-background;
-
+  overflow: hidden;
   position: relative;
   h1,.uk-text-lead{
     color: $global-inverse-color;
@@ -195,7 +216,7 @@ body{
 
 /*header.php*/
 header {
-	z-index: 1;
+	z-index: 3;
 
   &.uk-navbar-container:not(.uk-navbar-transparent){
     background-color: $global-background;
@@ -381,17 +402,6 @@ header {
   }
 }
 
-/*single.php*/
-#single{
-	background: none;
-}
-
-
-@media screen and (max-width: 750px) {
-	#article-visual{
-		height: 300px;
-	}
-}
 
 /*footer.php*/
 footer{
@@ -436,9 +446,13 @@ footer{
 }
 
 /* localization.php */
+
 #main_local{
   @extend %main;
 
+  .uk-container div{
+    z-index: 3;
+  }
 }
 #local_list{
   @extend %service_list;
@@ -470,3 +484,6 @@ footer{
     width: 200px;
   }
 }
+
+/* Import */
+@import "_tips.scss";

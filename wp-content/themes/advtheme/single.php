@@ -3,7 +3,7 @@ get_header();
 ?>
 
 
-	<?php  get_template_part('subnav'); ?>
+	<?php  //get_template_part('subnav'); ?>
 	<section id="single" class="uk-section uk-section-default " >
 
 		<div class="uk-container">
@@ -39,6 +39,7 @@ get_header();
 								</div>
 								<div class="uk-width-2-4@m">
 									<span><?php the_author(); ?></span>
+									<a href="https://www.linkedin.com/in/yuri-tamai-325b2779/" target="_blank"><span class="uk-margin-left" uk-icon="linkedin"></span></a>
 								</div>
 							</div>
 		        </div>

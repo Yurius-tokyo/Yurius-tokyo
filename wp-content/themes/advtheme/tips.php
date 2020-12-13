@@ -15,7 +15,7 @@ $args = array(
 $the_query = new WP_Query($args);
 
 ?>
-	<section id="main_tips" class="uk-section uk-section-default">
+	<section id="main_tips" class="uk-section uk-section-default uk-hidden">
 		<div class="uk-container">
 			<div uk-slider>
 
@@ -47,7 +47,7 @@ $the_query = new WP_Query($args);
 		</div>
 	</section>
 
-	<?php  get_template_part('subnav'); ?>
+	<?php //get_template_part('subnav'); ?>
 
 	<section id="tips_list" class="uk-section uk-section-default">
 		<div class="uk-container">
@@ -61,7 +61,7 @@ $the_query = new WP_Query($args);
 					?>
 					<div class="uk-card uk-grid-collapse uk-margin uk-box-shadow-medium post_thumb" uk-grid>
 				    <div class="uk-width-2-5@m uk-width-1-1@s uk-card-media-left uk-cover-container post_media">
-				        <a href="<?php the_permalink(); ?>"><img src="<?php has_post_thumbnail()? the_post_thumbnail_url() : print('/wp-content/themes/advtheme/img/photo1.png'); ?>" alt="" uk-cover></a>
+				        <a href="<?php the_permalink(); ?>"><img src="<?php has_post_thumbnail()? the_post_thumbnail_url() : print('/wp-content/themes/advtheme/img/photo3.jpg'); ?>" alt="" uk-cover></a>
 				        <canvas width="395" height="275"></canvas>
 				    </div>
 				    <div class="uk-width-3-5@m uk-width-1-1@s">

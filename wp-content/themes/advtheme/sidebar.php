@@ -14,8 +14,8 @@
     setup_postdata( $post );
     ?>
     <li class="uk-flex uk-box-shadow-medium uk-margin-bottom">
-      <div class="uk-margin-right"><a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" width="150" height="100" alt="" class=""></a>	</div>
-      <div class="">
+      <div class="uk-margin-right"><a href="<?php the_permalink(); ?>"><img src="<?php has_post_thumbnail()? the_post_thumbnail_url() : print('/wp-content/themes/advtheme/img/photo3.jpg'); ?>" width="150" height="100" alt="" class=""></a>	</div>
+      <div class="padding-top">
         <div class="category"><?php the_category(', '); ?> | <time class="" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time></div>
         <h3><a href="<?php the_permalink(); ?>" class=""><?php the_title(); ?></a></h3>
       </div>

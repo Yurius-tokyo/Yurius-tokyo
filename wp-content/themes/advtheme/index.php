@@ -27,7 +27,7 @@ get_header();
 					<a href="<?php the_permalink(); ?>" class="post_thumb uk-inline">
 						<div class="uk-card uk-card-default">
 							<div class="uk-card-media-top uk-cover-container post_media">
-								<img src="<?php has_post_thumbnail()? the_post_thumbnail_url() : print('/wp-content/themes/advtheme/img/blog.png'); ?>" uk-cover>
+								<img src="<?php has_post_thumbnail()? the_post_thumbnail_url() : print('/wp-content/themes/advtheme/img/photo3.jpg'); ?>" uk-cover>
 								<canvas width="375" height="220"></canvas>
 
 							</div>

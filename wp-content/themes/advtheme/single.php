@@ -33,7 +33,7 @@ get_header();
 								<div class="uk-width-2-4@m">
 			            <h3 class="uk-card-title">執筆者</h3>
 								</div>
-								<div class="uk-width-1-4@m">
+								<div class="uk-width-1-4@m uk-hidden">
 
 									<?php $user_id = get_the_author_meta('ID'); echo get_avatar( $user_id ); ?>
 								</div>

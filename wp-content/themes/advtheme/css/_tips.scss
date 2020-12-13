@@ -1,3 +1,19 @@
+/* subnav.php */
+#sub_nav{
+  background: $global-background;
+  .uk-search .uk-search-icon-flip{
+    right: 15px;
+  }
+  .uk-search-input{
+    width: 210px;
+    height: 59px;
+    background: #252535;
+    border-radius: 45px;
+    padding: 0 25px;
+  }
+}
+
+
 /* sidebar.php */
 
 #sidebar{
@@ -60,6 +76,10 @@
   .wp-block-quote{
     border-left: 3px solid $global-primary-background;
     padding-left: 30px;
+    cite{
+      font-size: $global-small-font-size;
+      color: $global-muted-color;
+    }
   }
   .post-content{
     margin-top:25px;

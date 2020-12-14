@@ -14,8 +14,8 @@ get_header();
 					<h1 class="">サービスを世界へ届けよう</h1>
 					<div class="uk-text-lead	">ただの翻訳サービスではありません。オンラインビジネスの多国籍化をサポートします</div>
 					<div class="uk-margin-large-top">
-						<a class="white_button uk-margin-right" href="#contact" uk-scroll>お見積もり</a>
-						<a class="dark_button" href="#pricing" uk-scroll>料金例</a>
+						<a class="white_button uk-margin-right" href="#contact">お見積もり</a>
+						<a class="dark_button" href="#pricing">料金例</a>
 					</div>
 				</div>
 			</div>
@@ -120,7 +120,7 @@ get_header();
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>ローカリゼーション</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>Etc.</li>
 								</ul>
-								<a class="dark_button uk-width-medium" href="#contact" uk-scroll>お見積もり</a>
+								<a class="dark_button uk-width-medium" href="#contact">お見積もり</a>
 							</div>
 		        </div>
 		    </div>
@@ -141,7 +141,7 @@ get_header();
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>スタイルガイド作成</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>Etc.</li>
 								</ul>
-								<a class="dark_button uk-width-medium" href="#contact" uk-scroll>お見積もり</a>
+								<a class="dark_button uk-width-medium" href="#contact">お見積もり</a>
 							</div>
 		        </div>
 		    </div>

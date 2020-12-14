@@ -14,8 +14,8 @@ get_header();
 				<h1 class="">集客に強いウェブサイトを持とう</h1>
 				<div class="uk-text-lead	">ブランディング、販促、インバウンドなどの目的に応じてホームページ制作。マーケティングに強い会社だからこそ、集客に繋がるホームページを一緒に考え、作ります。</div>
 				<div class="uk-margin-large-top">
-					<a class="white_button uk-margin-right" href="#contact" uk-scroll>お見積もり</a>
-					<a class="dark_button" href="#pricing" uk-scroll>料金例</a>
+					<a class="white_button uk-margin-right" href="#contact">お見積もり</a>
+					<a class="dark_button" href="#pricing">料金例</a>
 				</div>
 			</div>
 			</div>

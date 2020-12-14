@@ -42,7 +42,7 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P97LV56"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<header class="uk-navbar-container" uk-navbar uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: <?php $pagename=='home' ? print 'uk-navbar-transparent' : print 'navbar_dark';?> uk-light; top: 80">
+		<header id="header" class="uk-navbar-container" uk-navbar uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: <?php $pagename=='home' ? print 'uk-navbar-transparent' : print 'navbar_dark';?> uk-light; top: 80">
 			<div class="uk-navbar-left">
 				<a class="uk-navbar-item" href="/"><img width="200" height="50" id="logo" src="/wp-content/themes/advtheme/img/logo_primary.svg" uk-svg></a>
 				<!-- <a class="uk-navbar-item uk-logo" href="/">Adventures Inc.</a> -->

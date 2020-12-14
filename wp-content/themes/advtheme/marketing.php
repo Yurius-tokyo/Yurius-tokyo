@@ -12,8 +12,8 @@ get_header();
 					<h1 class="">分析力でデジタルマーケティングを加速</h1>
 					<div class="uk-text-lead	">広告からリードを獲得したい。オンラインストアの売り上げを増やしたい。自社に合った集客方法を知りたい。コミュニティを活発にしたい。様々なニーズにお応えします。</div>
 					<div class="uk-margin-large-top">
-						<a class="white_button uk-margin-right" href="#contact" uk-scroll>お見積もり</a>
-						<a class="dark_button" href="#pricing" uk-scroll>料金例</a>
+						<a class="white_button uk-margin-right" href="#contact">お見積もり</a>
+						<a class="dark_button" href="#pricing">料金例</a>
 					</div>
 				</div>
 			</div>
@@ -119,7 +119,7 @@ get_header();
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>月次レポート</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>週次チューニング</li>
 								</ul>
-								<a class="dark_button uk-width-medium" href="#contact" uk-scroll>お見積もり</a>
+								<a class="dark_button uk-width-medium" href="#contact">お見積もり</a>
 							</div>
 		        </div>
 		    </div>
@@ -137,7 +137,7 @@ get_header();
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>3アカウントまで</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>2ヶ国語まで対応</li>
 								</ul>
-								<a class="dark_button uk-width-medium" href="#contact" uk-scroll>お見積もり</a>
+								<a class="dark_button uk-width-medium" href="#contact">お見積もり</a>
 							</div>
 		        </div>
 		    </div>

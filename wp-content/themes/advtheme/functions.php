@@ -4,6 +4,11 @@
 	add_theme_support( 'title-tag' );
 	add_image_size( 'yv-size', 500, 320,true);
 
+	function custom_excerpt_length( $length ) {
+     return 40;
+	}
+	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 	function create_post_type() {
 	  $exampleSupports = [  // supports のパラメータを設定する配列（初期値だと title と editor のみ投稿画面で使える）
 	    'title',  // 記事タイトル

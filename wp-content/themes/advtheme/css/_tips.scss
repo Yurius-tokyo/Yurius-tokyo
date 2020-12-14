@@ -19,6 +19,7 @@
 #sidebar{
   .sidebar-title{
     font-size: $global-large-font-size;
+    font-weight: bold;
   }
   .tag-cloud-link{
     border: 2px solid $global-emphasis-color;
@@ -68,10 +69,25 @@
       text-decoration: none;
     }
   }
+  .post-content{
+    h2{
+      
+    }
+    h2{
+      margin-top: 60px;
+    }
+    h3{
+      border-bottom: 3px solid;
+    }
+    h4,h5{
+      font-weight: bold;
+    }
+  }
   .wp-block-code{
     background: $global-emphasis-color;
     color: $global-inverse-color;
     border: 0px;
+    white-space: pre-wrap;
   }
   .wp-block-quote{
     border-left: 3px solid $global-primary-background;
@@ -84,6 +100,7 @@
   .post-content{
     margin-top:25px;
   }
+
   #author{
     &.uk-card{
       background: $global-emphasis-color;

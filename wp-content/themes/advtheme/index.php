@@ -8,7 +8,7 @@ get_header();
 				<div class="uk-text-lead	">Webサイト制作からマーケティングまで、 オンラインビジネスを総合サポート </div>
 
 			</div>
-			<a href="#services" class="" uk-scroll><img class="down_arrow" src="/wp-content/themes/advtheme/img/down_arrow.svg"></a>
+			<a href="#services" class=""><img class="down_arrow" src="/wp-content/themes/advtheme/img/down_arrow.svg"></a>
 		</div>
 
 	</section>

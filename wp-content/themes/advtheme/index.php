@@ -19,7 +19,17 @@ get_header();
 			<h2 class="uk-text-center">最新のコラム</h2>
 			<div class="uk-child-width-1-1@s uk-child-width-1-3@m" uk-grid>
 				<?php
-					if(have_posts()): while(have_posts()): the_post();
+				$args = array(
+					'posts_per_page' => 3,
+					'orderby' => 'post_date',
+					'order' => 'DESC',
+					'post_type' => 'post',
+					'post_status' => 'publish'
+				);
+				$the_query = new WP_Query($args);
+
+				if ( $the_query->have_posts() ) :
+					while ( $the_query->have_posts() ) : $the_query->the_post();
 						$cat = get_the_category();
 						$excerpt = get_the_excerpt();
 						$cat_name = $cat[0]->cat_name;

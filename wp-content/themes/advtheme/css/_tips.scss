@@ -1,3 +1,14 @@
+/* Tips common */
+.tag-cloud-link, .tag_list a{
+  border: 2px solid $global-emphasis-color;
+  box-sizing: border-box;
+  padding: 3px;
+  color: $global-emphasis-color!important;
+  word-break: keep-all;
+  line-height: 2;
+}
+
+
 /* subnav.php */
 #sub_nav{
   background: $global-background;
@@ -17,28 +28,25 @@
 /* sidebar.php */
 
 #sidebar{
+  color: $global-emphasis-color;
   .sidebar-title{
     font-size: $global-large-font-size;
     font-weight: bold;
   }
-  .tag-cloud-link{
-    border: 2px solid $global-emphasis-color;
-    box-sizing: border-box;
-    padding: 3px;
-    color: $global-emphasis-color;
 
-  }
   .popular-posts{
     margin-top: 70px;
   }
   .wpp-list,.new_list{
     padding-left: 0;
     h3{
-      margin-top: 10px;
+      margin-top: 0px;
+      line-height: 1.0;
     }
     li{
       h3 a{
         color: $global-emphasis-color;
+        font-size: $global-font-size;
       }
       .category a{
         color: $global-color;
@@ -61,7 +69,6 @@
 
 #single{
   color: $global-emphasis-color;
-
   a{
     color: $global-color;
     &:hover{
@@ -69,9 +76,11 @@
       text-decoration: none;
     }
   }
-  .post-content{
+  #post_content{
+    margin-top:25px;
+    margin-bottom: $global-large-margin;
     h2{
-      
+
     }
     h2{
       margin-top: 60px;
@@ -81,6 +90,9 @@
     }
     h4,h5{
       font-weight: bold;
+    }
+    img{
+      box-shadow: $global-small-box-shadow;
     }
   }
   .wp-block-code{
@@ -97,8 +109,18 @@
       color: $global-muted-color;
     }
   }
-  .post-content{
-    margin-top:25px;
+  .wp-block-preformatted{
+    color: $global-emphasis-color;
+    white-space: pre-wrap;
+  }
+  em{
+    color: $global-second-color;
+  }
+
+  #after_post{
+    >div{
+        margin-bottom: $global-margin;
+    }
   }
 
   #author{

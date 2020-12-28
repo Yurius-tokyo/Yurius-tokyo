@@ -8,7 +8,7 @@ get_header();
 				<div class="uk-text-lead	">Webサイト制作からマーケティングまで、 オンラインビジネスを総合サポート </div>
 
 			</div>
-			<a href="#services" class=""><img class="down_arrow" src="/wp-content/themes/advtheme/img/down_arrow.svg"></a>
+			<a href="#latest_blogs" class=""><img class="down_arrow" src="/wp-content/themes/advtheme/img/down_arrow.svg"></a>
 		</div>
 
 	</section>
@@ -16,7 +16,7 @@ get_header();
 	<section id="latest_blogs" class="uk-section">
 
 		<div class="uk-container">
-			<h2 class="uk-text-center">最新のコラム</h2>
+			<h2 class="uk-text-center">最新のお役立ち記事</h2>
 			<div class="uk-child-width-1-1@s uk-child-width-1-3@m" uk-grid>
 				<?php
 				$args = array(

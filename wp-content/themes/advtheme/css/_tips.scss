@@ -15,13 +15,15 @@
   .uk-search .uk-search-icon-flip{
     right: 15px;
   }
-  .uk-search-input{
-    width: 210px;
-    height: 59px;
-    background: #252535;
-    border-radius: 45px;
-    padding: 0 25px;
-  }
+
+}
+.uk-search-input{
+  width: 210px;
+  height: 40px;
+  background: #252535;
+  border-radius: 45px;
+  padding: 0 25px;
+  color: $global-inverse-color;
 }
 
 

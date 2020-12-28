@@ -3,7 +3,7 @@ get_header();
 ?>
 
 
-	<?php  //get_template_part('subnav'); ?>
+	<?php  get_template_part('subnav'); ?>
 	<section id="single" class="uk-section uk-section-default " >
 
 		<div class="uk-container">
@@ -64,7 +64,7 @@ get_header();
 
 						<div id="lead" class="uk-card uk-card-body uk-text-center uk-margin-top box_shadow">
 							<p class="">
-								ホームページ制作のご依頼を承っています。お気軽にご相談ください。
+								ホームページ制作、多言語サイト制作のご依頼を承っています。お気軽にご相談ください。
 							</p>
 							<a href="#contact" uk-icon="icon: chevron-down; ratio: 2.0" uk-scroll></a>
 

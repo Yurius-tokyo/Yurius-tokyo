@@ -1,12 +1,44 @@
 <?php
+	$meta_desc;
 	if ( is_home() ) {
     $pagename = 'home';
-
-  }else{
-  	$post = get_post();
+		$meta_desc = get_bloginfo('description');
+	}elseif( is_category() ) {
+    $category = get_the_category();
+    $cat_slug = $category[0]->category_nicename;
+		$meta_desc = get_meta_description_from('category');
+  }elseif( is_tag() ) {
+		$meta_desc = get_meta_description_from('tag');
+	}elseif( is_page() ) {
+		$post = get_post();
   	$pagename = $post -> post_name;
-
-  }
+		switch ($pagename) {
+			case 'tips':
+				$meta_desc = 'Web制作、マーケティング、多言語化などについてのお役立ち記事です。';
+				break;
+			case 'web_development':
+				$meta_desc = 'ブランディング、販促、インバウンドなどの目的に応じてホームページ制作。マーケティングに強い会社だからこそ、集客に繋がるホームページを一緒に考え、作ります。サービス内容や料金など。';
+				break;
+			case 'marketing':
+				$meta_desc = 'マーケティング支援について。広告からリードを獲得したい。オンラインストアの売り上げを増やしたい。自社に合った集客方法を知りたい。コミュニティを活発にしたい。様々なニーズにお応えします。';
+				break;
+			case 'localization':
+				$meta_desc = '翻訳サービスの内容と料金について。ただの翻訳サービスではありません。オンラインビジネスの多国籍化をサポートします。';
+				break;
+			case 'company':
+				$meta_desc = 'アドベンチャーズ株式会社の会社概要。';
+				break;
+			default:
+				$meta_desc = get_bloginfo('description');
+				break;
+		}
+  }elseif( is_single() ) {
+		$meta_desc = get_meta_description_from('post');
+	}elseif ( is_search() ) {
+		$meta_desc = get_meta_description_from('search');
+	}else {
+		$meta_desc = get_bloginfo('description');
+	}
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +47,7 @@
 
 		<meta charset="UTF-8">
 		<meta name="keywords" content="<?php bloginfo('keywords'); ?>">
-		<meta name="description" content="<?php bloginfo('description'); ?>">
+		<meta name="description" content="<?php echo($meta_desc); ?>">
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0" />
 		<link rel="icon" href="/wp-content/themes/advtheme/img/favicon.ico" />
 		<!-- UIkit CSS -->
@@ -25,7 +57,7 @@
 		<script src="/wp-content/themes/advtheme/uikit/js/uikit.min.js"></script>
 		<script src="/wp-content/themes/advtheme/uikit/js/uikit-icons.min.js"></script>
 
-		<!-- Plugins -->
+		<!-- WP head -->
 
 		<?php wp_head(); ?>
 		<!-- Google Tag Manager -->
@@ -52,14 +84,15 @@
 				<ul class="uk-navbar-nav uk-nav-default uk-visible@m">
 
 	        <li>
-	            <li><a href="/tips/" class="">お役立ち記事</a></li>
-	            <div class="uk-navbar-dropdown uk-hidden">
+	            <a href="/tips/" class="">お役立ち記事</a>
+	            <div class="uk-navbar-dropdown">
 	                <ul class="uk-nav uk-navbar-dropdown-nav">
-	                    <li class="<?php $pagename==='' && print 'uk-active';?>"><a href="/">全て</a></li>
-	                    <li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">Web制作</a></li>
-	                    <li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">ビジネス</a></li>
-											<li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">マーケティング</a></li>
-											<li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">コラム</a></li>
+	                    <li class="<?php $pagename==='tips' && print 'uk-active';?>"><a href="/tips/">全て</a></li>
+	                    <li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?>"><a href="/category/tips_web/">Web制作</a></li>
+											<li class="<?php $cat_slug==='tips_business' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_business/">ビジネス</a></li>
+					            <li class="<?php $cat_slug==='tips_marketing' && print 'uk-active' ;?>"><a href="/category/tips_marketing/">マーケティング</a></li>
+					            <li class="<?php $cat_slug==='tips_translation' && print 'uk-active' ;?>"><a href="/category/tips_translation/">翻訳</a></li>
+					            <li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_web/">コラム</a></li>
 	                </ul>
 	            </div>
 	        </li>
@@ -86,12 +119,13 @@
 	        <ul class="uk-nav uk-nav-default">
 							<li class="<?php $pagename==='home' && print 'uk-active' ;?>"><a href="/">トップ</a></li>
 	            <li class="uk-parent"><a href="/tips/">お役立ち記事</a>
-	            	<ul class="uk-nav-sub uk-hidden">
-									<li class="<?php $pagename==='' && print 'uk-active';?>"><a href="/">全て</a></li>
-									<li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">Web制作</a></li>
-									<li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">ビジネス</a></li>
-									<li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">マーケティング</a></li>
-									<li class="<?php $pagename==='' && print 'uk-active' ;?>"><a href="/">コラム</a></li>
+	            	<ul class="uk-nav-sub">
+									<li class="<?php $pagename==='tips' && print 'uk-active';?>"><a href="/tips/">全て</a></li>
+									<li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?>"><a href="/category/tips_web/">Web制作</a></li>
+									<li class="<?php $cat_slug==='tips_business' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_business/">ビジネス</a></li>
+									<li class="<?php $cat_slug==='tips_marketing' && print 'uk-active' ;?>"><a href="/category/tips_marketing/">マーケティング</a></li>
+									<li class="<?php $cat_slug==='tips_translation' && print 'uk-active' ;?>"><a href="/category/tips_translation/">翻訳</a></li>
+									<li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_web/">コラム</a></li>
 	            	</ul>
 	            </li>
 
@@ -102,6 +136,7 @@
 							<li class="<?php $pagename==='company' && print 'uk-active' ;?>"><a href="/company/">会社案内</a></li>
 			        <li><a href="/#contact">お見積もり</a></li>
 	        </ul>
+					<?php get_search_form(); ?>
 			  </div>
 			</div>
 			<!-- /SP menu -->

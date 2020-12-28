@@ -40,4 +40,44 @@
 			));
 		}
 	add_action( 'widgets_init', 'widgetsidebar_init' );
+
+	function get_meta_description_from($type){
+		switch ($type) {
+			case 'category':
+				$desc = trim( strip_tags( category_description() ) );
+				if ( $desc ) {//カテゴリ設定に説明がある場合はそれを返す
+					return $desc;
+				}
+				$desc = '「' . single_cat_title('', false) . '」の記事一覧です。' . get_bloginfo('description');
+				return $desc;
+				break;
+
+			case 'tag':
+				$desc = trim( strip_tags( tag_description() ) );
+				if ( $desc ) {
+					return $desc;
+				}
+				$desc = '「' . single_cat_title('', false) . '」の記事一覧です。' . get_bloginfo('description');
+				return $desc;
+				break;
+
+			case 'post':
+				$desc = get_the_excerpt();
+				if ( $desc ) {
+					return $desc;
+				}
+				$desc = '「' . single_cat_title('', false) . '」の記事です。' . get_bloginfo('description');
+				return $desc;
+				break;
+			case 'search':
+				$desc = '「' . get_search_query() . '」の記事一覧です。' . get_bloginfo('description');
+				return $desc;
+				break;
+
+			default:
+				// code...
+				break;
+		}
+
+	}
 ?>

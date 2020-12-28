@@ -2,7 +2,7 @@
 	get_header();
 ?>
 
-<?php  //get_template_part('subnav'); ?>
+<?php  get_template_part('subnav'); ?>
 
 <section id="tips_list" class="uk-section uk-section-default">
 	<div class="uk-container">

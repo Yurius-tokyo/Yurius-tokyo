@@ -245,6 +245,7 @@ header {
   /* SP */
   .uk-offcanvas-bar{
     background: $global-primary-background;
+    z-index: 4;
   }
 }
 
@@ -287,6 +288,11 @@ header {
   }
   h1{
     font-size: 80px;
+  }
+  @include screen-mobile {
+    h1{
+      font-size: 40px;
+    }
   }
 }
 

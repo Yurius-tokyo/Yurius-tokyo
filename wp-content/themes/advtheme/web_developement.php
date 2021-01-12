@@ -109,14 +109,14 @@ get_header();
 							<div class="price_inner">
 								<h3 class="uk-card-title">コーポレートサイト</h3>
 								<h4>約20万円~</h4>
-		            <p>10ページ以内の一般的なコーポレートサイト</p>
-								<p>制作期間: 2週間~1ヶ月</p>
+		            <p>5ページ以内の一般的なコーポレートサイト</p>
+								<p>制作期間: 1ヶ月~2ヶ月</p>
 								<ul class="uk-list uk-margin-large">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>オリジナルデザイン</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>CMS (WordPress)</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>お問い合わせフォーム</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>レスポンシブ</li>
-										<li><span uk-icon="icon: check" class="uk-margin-right"></span>Etc.</li>
+										<li><span uk-icon="icon: check" class="uk-margin-right"></span>日本語のみ</li>
 								</ul>
 								<a class="dark_button uk-width-medium" href="#contact" uk-scroll>お見積もり</a>
 							</div>
@@ -125,16 +125,16 @@ get_header();
 				<div>
 		        <div class="uk-card uk-card-default uk-card-body price_box">
 							<div class="price_inner">
-								<h3 class="uk-card-title">ECサイト</h3>
-								<h4>約60万円~</h4>
+								<h3 class="uk-card-title">多言語ECサイト</h3>
+								<h4>約48万円~</h4>
 		            <p>10カテゴリ、100商品程度のECサイト。WooCommerceまたはその他のECシステムを組み込んで制作</p>
-								<p>制作期間: 1ヶ月~</p>
+								<p>制作期間: 2ヶ月~</p>
 								<ul class="uk-list uk-margin-large">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>オリジナルデザイン</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>CMS (WordPress)</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>ECシステム組み込み</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>レスポンシブ</li>
-										<li><span uk-icon="icon: check" class="uk-margin-right"></span>Etc.</li>
+										<li><span uk-icon="icon: check" class="uk-margin-right"></span>日本語、英語</li>
 								</ul>
 								<a class="dark_button uk-width-medium" href="#contact" uk-scroll>お見積もり</a>
 							</div>
@@ -146,13 +146,13 @@ get_header();
 								<h3 class="uk-card-title">ランディングページ</h3>
 								<h4>約10万円~</h4>
 		            <p>既存のサイト内、または単体でランディングページ1枚を制作</p>
-								<p>制作期間: 2週間~1ヶ月</p>
+								<p>制作期間: 1ヶ月~</p>
 								<ul class="uk-list uk-margin-large">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>オリジナルデザイン</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>お問い合わせフォーム</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>コピーライティング</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>レスポンシブ</li>
-										<li><span uk-icon="icon: check" class="uk-margin-right"></span>Etc.</li>
+										<li><span uk-icon="icon: check" class="uk-margin-right"></span>日本語のみ</li>
 								</ul>
 								<a class="dark_button uk-width-medium" href="#contact" uk-scroll>お見積もり</a>
 							</div>

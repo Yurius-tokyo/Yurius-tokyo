@@ -2,13 +2,14 @@
 get_header();
 ?>
 	<section id="main" class="uk-section uk-section-default ">
+		<video class="back_video" src="/wp-content/themes/advtheme/img/videomain.mp4" loop muted autoplay></video>
 		<div class="uk-container uk-height-1-1 uk-flex uk-flex-middle">
 			<div class="text-box">
-				<h1 class="">新しい何かをつくろう</h1>
-				<div class="uk-text-lead	">Webサイト制作からマーケティングまで、 オンラインビジネスを総合サポート </div>
+				<!-- <h1 class="">新しい何かをつくろう</h1>
+				<div class="uk-text-lead	">Webサイト制作からマーケティングまで、 オンラインビジネスを総合サポート </div> -->
 
 			</div>
-			<a href="#latest_blogs" class=""><img class="down_arrow" src="/wp-content/themes/advtheme/img/down_arrow.svg"></a>
+			<a href="#latest_blogs" class="circle_button"><img class="down_arrow" src="/wp-content/themes/advtheme/img/down_arrow.svg"></a>
 		</div>
 
 	</section>

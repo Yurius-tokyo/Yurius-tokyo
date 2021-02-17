@@ -1,5 +1,6 @@
 <?php
 	$meta_desc;
+	$image;
 	if ( is_home() ) {
     $pagename = 'home';
 		$meta_desc = get_bloginfo('description');
@@ -39,6 +40,10 @@
 	}else {
 		$meta_desc = get_bloginfo('description');
 	}
+
+	if (has_post_thumbnail()){
+   $image = get_the_post_thumbnail_url();
+  }
 ?>
 
 <!DOCTYPE html>
@@ -48,6 +53,9 @@
 		<meta charset="UTF-8">
 		<meta name="keywords" content="<?php bloginfo('keywords'); ?>">
 		<meta name="description" content="<?php echo($meta_desc); ?>">
+		<meta property="og:description" content="<?php echo($meta_desc); ?>">
+		<meta property="og:image" content="<?php echo($image); ?>">
+		<meta name="twitter:card" content="summary_large_image">
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0" />
 		<link rel="icon" href="/wp-content/themes/advtheme/img/favicon.ico" />
 		<!-- UIkit CSS -->

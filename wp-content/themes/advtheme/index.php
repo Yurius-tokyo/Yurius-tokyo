@@ -2,7 +2,7 @@
 get_header();
 ?>
 	<section id="main" class="uk-section uk-section-default ">
-		<video class="back_video" src="/wp-content/themes/advtheme/img/videomain.mp4" loop muted autoplay></video>
+		<video class="back_video uk-visible@s" src="/wp-content/themes/advtheme/img/videomain.mp4" uk-video loop muted autoplay></video>
 		<div class="uk-container uk-height-1-1 uk-flex uk-flex-middle">
 			<div class="text-box">
 				<!-- <h1 class="">新しい何かをつくろう</h1>
@@ -65,7 +65,7 @@ get_header();
 			<h2 class="light uk-text-center">サービス</h2>
 			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
 				<div class="uk-padding service1">
-					<img class="box_shadow" data-src="/wp-content/themes/advtheme/img/service1.jpg" alt="" uk-img>
+					<img class="" data-src="/wp-content/themes/advtheme/img/neon_web.png" alt="" uk-img>
 				</div>
 
 				<div class="uk-padding">
@@ -83,13 +83,13 @@ get_header();
 					<a href="/marketing/" class="white_button uk-margin-medium-top">詳しく見る<span uk-icon="arrow-right"></span></a>
 				</div>
 				<div class="uk-padding service2">
-					<img class="box_shadow" data-src="/wp-content/themes/advtheme/img/service2.jpg" alt="" uk-img>
+					<img class="" data-src="/wp-content/themes/advtheme/img/neon_mark.png" alt="" uk-img>
 				</div>
 			</div>
 			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
 				<img class="oval3" src="/wp-content/themes/advtheme/img/oval.svg" alt="">
 				<div class="uk-padding service3">
-					<img class="box_shadow" data-src="/wp-content/themes/advtheme/img/service3.jpg" alt="" uk-img>
+					<img class="" data-src="/wp-content/themes/advtheme/img/neon_loca.png" alt="" uk-img>
 				</div>
 
 				<div class="uk-padding">

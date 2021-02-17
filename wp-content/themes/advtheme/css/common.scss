@@ -139,7 +139,7 @@ body{
 .back_video{
   opacity: 0.5;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   min-width: 100%;
   min-height: 100vh;
@@ -263,10 +263,16 @@ header {
 /*index.php*/
 #main{
 	height: 100vh;
-  //background-image: url($imgDir + "top_back.svg");
+
   background: $global-primary-background;
   overflow: hidden;
   position: relative;
+  @include screen-mobile{
+    height: 50vh;
+    background: url(../img/videomain.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   .back_video{
     opacity: 0.7;
   }

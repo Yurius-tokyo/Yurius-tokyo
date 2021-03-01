@@ -16,7 +16,14 @@
 				</div>
 				<div class="">
 					<h3><a href="/tips/" class="uk-link-text">お役立ち記事</a></h3>
-
+					<ul class="uk-list uk-link-text">
+							<li class=""><a href="/tips/">全て</a></li>
+							<li class=""><a href="/category/tips_web/">Web制作</a></li>
+							<li class="uk-hidden"><a href="/category/tips_business/">ビジネス</a></li>
+							<li class=""><a href="/category/tips_marketing/">マーケティング</a></li>
+							<li class=""><a href="/category/tips_translation/">翻訳</a></li>
+							<li class="uk-hidden"><a href="/category/tips_game/">ゲーム</a></li>
+					</ul>
 	    	</div>
 	    	<div>
 					<h3>サービス</h3>
@@ -29,6 +36,7 @@
 				<div>
 					<ul class="uk-list uk-link-text">
 						<li><a href="/company/">会社案内</a></li>
+						<li><a href="/news/">ニュース</a></li>
 						<li><a href="https://global.adventuresjp.com/" target="_blank" class="">Global Services<span class="uk-margin-left" uk-icon="icon: forward"></span></a></li>
 
 

@@ -35,8 +35,8 @@ get_header();
 						$excerpt = get_the_excerpt();
 						$cat_name = $cat[0]->cat_name;
 					?>
-					<a href="<?php the_permalink(); ?>" class="post_thumb uk-inline">
-						<div class="uk-card uk-card-default">
+					<a href="<?php the_permalink(); ?>" class=" uk-inline">
+						<div class="uk-card uk-card-default uk-card-hover">
 							<div class="uk-card-media-top uk-cover-container post_media">
 								<img src="<?php has_post_thumbnail()? the_post_thumbnail_url() : print('/wp-content/themes/advtheme/img/photo3.jpg'); ?>" uk-cover>
 								<canvas width="375" height="220"></canvas>
@@ -103,29 +103,39 @@ get_header();
 		</div>
 	</section>
 
-	<section id="news" class="uk-section uk-hidden">
+	<section id="news" class="uk-section">
 		<div class="uk-container">
 			<h2 class="uk-text-center">最新ニュース</h2>
-			<div class="uk-child-width-1-1@s uk-child-width-1-3@m" uk-grid>
-				<a class="uk-inline news_block">
+			<div class="uk-child-width-1-1@s uk-child-width-1-3@m uk-grid-karge" uk-grid>
+				<?php //Post
+					$args = array(
+						'posts_per_page' => 20,
+						'paged' => $paged,
+						'orderby' => 'post_date',
+						'order' => 'DESC',
+						'post_type' => 'news',
+						'post_status' => 'publish'
+					);
+					$the_query = new WP_Query($args);
+
+					if ( $the_query->have_posts() ) :
+						while ( $the_query->have_posts() ) : $the_query->the_post();
+							$terms = get_the_terms( $post->ID,'news-cat');
+							$cat_name = $terms[0]->name;
+				?>
+				<a href="<?php the_permalink(); ?>" class="uk-inline news_block">
 					<div class="uk-card uk-card-hover uk-card-default uk-card-body">
-		          <h3 class="uk-card-title">Hover</h3>
-							<span>2020/1/1</span>
+		          <h3 class="uk-card-title"><?php the_title(); ?></h3>
+							<time class="" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
 							<hr>
-		          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea sollicitudin mauris, volutpat quis est enim eget magna. Ultricies aliquam, sit scelerisque dictum ac facilisi pretium, elementum. In eleifend ultricies tellus scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea sollicitudin mauris, volutpat quis est enim eget magna. </p>
+		          <p><?php the_excerpt(); ?></p>
 		      </div>
 				</a>
-				<a class="uk-inline news_block">
-					<div class="uk-card uk-card-hover uk-card-default uk-card-body">
-		          <h3 class="uk-card-title">Hover</h3>
-							<span>2020/1/1</span>
-							<hr>
-		          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea sollicitudin mauris, volutpat quis est enim eget magna. Ultricies aliquam, sit scelerisque dictum ac facilisi pretium, elementum. In eleifend ultricies tellus scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea sollicitudin mauris, volutpat quis est enim eget magna. </p>
-		      </div>
-				</a>
+				<?php endwhile; endif;
+					wp_reset_postdata(); // End Post ?>
 			</div>
 			<div class="uk-margin-large-top uk-text-center ">
-				<a class="dark_button" href="">もっと見る</a>
+				<a class="dark_button" href="/news/">もっと見る</a>
 			</div>
 		</div>
 

@@ -43,7 +43,9 @@
 
 	if (has_post_thumbnail()){
    $image = get_the_post_thumbnail_url();
-  }
+ }else {
+ 	$image = '//loca.games/wp-content/uploads/2021/02/slide6.png';
+ }
 ?>
 
 <!DOCTYPE html>
@@ -55,6 +57,7 @@
 		<meta name="description" content="<?php echo($meta_desc); ?>">
 		<meta property="og:description" content="<?php echo($meta_desc); ?>">
 		<meta property="og:image" content="<?php echo($image); ?>">
+		<meta property="og:title" content="<?php the_title_attribute();?> - <?php bloginfo('title'); ?>" />
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0" />
 		<link rel="icon" href="/wp-content/themes/advtheme/img/favicon.ico" />
@@ -100,7 +103,7 @@
 											<li class="<?php $cat_slug==='tips_business' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_business/">ビジネス</a></li>
 					            <li class="<?php $cat_slug==='tips_marketing' && print 'uk-active' ;?>"><a href="/category/tips_marketing/">マーケティング</a></li>
 					            <li class="<?php $cat_slug==='tips_translation' && print 'uk-active' ;?>"><a href="/category/tips_translation/">翻訳</a></li>
-					            <li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_web/">コラム</a></li>
+					            <li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_game/">ゲーム</a></li>
 	                </ul>
 	            </div>
 	        </li>
@@ -133,7 +136,7 @@
 									<li class="<?php $cat_slug==='tips_business' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_business/">ビジネス</a></li>
 									<li class="<?php $cat_slug==='tips_marketing' && print 'uk-active' ;?>"><a href="/category/tips_marketing/">マーケティング</a></li>
 									<li class="<?php $cat_slug==='tips_translation' && print 'uk-active' ;?>"><a href="/category/tips_translation/">翻訳</a></li>
-									<li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_web/">コラム</a></li>
+									<li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_game/">ゲーム</a></li>
 	            	</ul>
 	            </li>
 

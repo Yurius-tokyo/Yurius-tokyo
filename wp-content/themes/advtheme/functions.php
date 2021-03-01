@@ -28,6 +28,21 @@
 	}
 	add_action( 'init', 'create_post_type' ); // アクションに上記関数をフックします
 
+	function add_custom_taxonomy_event() {
+    register_taxonomy(
+        'news-cat', /* カテゴリーの識別スラッグ */
+        'news', /* 対象の投稿タイプのスラッグ */
+        array(
+            'hierarchical' => true,
+            'update_count_callback' => '_update_post_term_count',
+            'label' => 'カテゴリー',
+            'public' => true,
+            'show_ui' => true,
+        )
+    );
+	}
+	add_action( 'init', 'add_custom_taxonomy_event', 0 );
+
 	function widgetsidebar_init() {
 		register_sidebar(array(
 			'name'=>'サイドバー',

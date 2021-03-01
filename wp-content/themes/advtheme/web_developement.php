@@ -25,73 +25,85 @@ get_header();
 
 	<section id="dev_list" class="uk-section uk-section-default uk-text-center">
 		<div class="uk-container">
-			<div class="uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
+			<div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-large" uk-grid>
 				<div>
 	        <div class="uk-card">
 	            <div class="uk-card-media-top">
-	                <img src="/wp-content/themes/advtheme/img/photo1.png" alt="">
+	                <img src="/wp-content/themes/advtheme/img/mini_site.svg" alt="">
 	            </div>
 	            <div class="uk-card-body">
 	                <h3 class="uk-card-title">コーポレートサイト</h3>
-	                <p>会社紹介、サービス紹介など。また飲食店や美容室などのサイトを制作します。</p>
+	                <p>会社紹介、サービス紹介、飲食店、美容室などのビジネス用ホームページを制作します。</p>
 	            </div>
 	        </div>
 	    	</div>
 				<div>
 	        <div class="uk-card">
 	            <div class="uk-card-media-top">
-	                <img src="/wp-content/themes/advtheme/img/photo2.jpg" alt="">
+	                <img src="/wp-content/themes/advtheme/img/photo2.png" alt="">
 	            </div>
 	            <div class="uk-card-body">
-	                <h3 class="uk-card-title">Eコマース</h3>
-	                <p>企画からシステムの組み込みまで、ECサイトの立ち上げをお手伝いします。</p>
+	                <h3 class="uk-card-title">ECサイト</h3>
+	                <p>カートシステムの導入からサイト制作に至るまで、オンラインショッピングの立ち上げをお手伝いします。越境ECも可能です。</p>
 	            </div>
 	        </div>
 	    	</div>
 				<div>
+					<div class="uk-card">
+							<div class="uk-card-media-top">
+									<img src="/wp-content/themes/advtheme/img/photo4.png" alt="">
+							</div>
+							<div class="uk-card-body">
+									<h3 class="uk-card-title">多言語サイト</h3>
+									<p>グローバル対応サイトを得意としています。翻訳もセットで行います。既存サイトの多言語化カスタマイズも可能です。</p>
+							</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card">
+							<div class="uk-card-media-top">
+									<img src="/wp-content/themes/advtheme/img/wp_logo.png" alt="">
+							</div>
+							<div class="uk-card-body">
+									<h3 class="uk-card-title">カスタムWordPress</h3>
+									<p>オリジナルデザインのWordPressサイトを制作します。目的に応じた機能の追加も可能です。</p>
+							</div>
+					</div>
+				</div>
+				<div>
 	        <div class="uk-card">
 	            <div class="uk-card-media-top">
-	                <img src="/wp-content/themes/advtheme/img/photo3.jpg" alt="">
+	                <img src="/wp-content/themes/advtheme/img/shopify_logo.svg" alt="">
 	            </div>
 	            <div class="uk-card-body">
-	                <h3 class="uk-card-title">ランディングページ</h3>
-	                <p>プロモーションに効果的なランディングページの企画やコピーライティングも含めてご提案します。</p>
+	                <h3 class="uk-card-title">shopifyカスタマイズ</h3>
+	                <p>shopifyを使った本格的なオンラインショッピングサイトを制作します。</p>
 	            </div>
 	        </div>
 	    	</div>
 				<div>
-	        <div class="uk-card">
-	            <div class="uk-card-media-top">
-	                <img src="/wp-content/themes/advtheme/img/photo4.jpg" alt="">
-	            </div>
-	            <div class="uk-card-body">
-	                <h3 class="uk-card-title">ブログメディア</h3>
-	                <p>ニュースサイトやブログメディアの制作をお手伝いします。</p>
-	            </div>
-	        </div>
-	    	</div>
+					<div class="uk-card">
+							<div class="uk-card-media-top">
+									<img src="/wp-content/themes/advtheme/img/woocommerce_logo.svg" alt="">
+							</div>
+							<div class="uk-card-body">
+									<h3 class="uk-card-title">WooCommerceカスタマイズ</h3>
+									<p>WooCommerceを導入してカスタマイズします。決済機能付きサイトなど、自由な設計が可能です。</p>
+							</div>
+					</div>
+				</div>
 				<div>
 	        <div class="uk-card">
 	            <div class="uk-card-media-top">
-	                <img src="/wp-content/themes/advtheme/img/photo5.jpg" alt="">
+	                <img src="/wp-content/themes/advtheme/img/bbpress_logo.png" alt="">
 	            </div>
 	            <div class="uk-card-body">
 	                <h3 class="uk-card-title">コミュニティサイト</h3>
-	                <p>ユーザー同士がやり取りできるコミュニティサイトを制作します。</p>
+	                <p>bbPressをカスタマイズして、掲示板やその他のユーザー参加型サイトを制作します。</p>
 	            </div>
 	        </div>
 	    	</div>
-				<div>
-	        <div class="uk-card">
-	            <div class="uk-card-media-top">
-	                <img src="/wp-content/themes/advtheme/img/photo6.jpg" alt="">
-	            </div>
-	            <div class="uk-card-body">
-	                <h3 class="uk-card-title">インバウンド向け多言語サイト</h3>
-	                <p>グローバル対応を得意としています。翻訳をセットでご依頼頂くと、翻訳のみの価格よりもお得です。</p>
-	            </div>
-	        </div>
-	    	</div>
+
 			</div>
 		</div>
 
@@ -163,17 +175,17 @@ get_header();
 		</div>
 	</section>
 
-	<section id="portfolio" class="uk-section uk-section-default uk-hidden">
+	<section id="portfolio" class="uk-section uk-section-default">
 		<div class="uk-container">
 			<h2 class="uk-text-center">ポートフォリオ</h2>
 			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
-				<div class="uk-padding service1">
-					<img class="" data-src="/wp-content/themes/advtheme/img/mini_site.svg" alt="" uk-img>
+				<div class="uk-padding">
+					<img class="photoframe" data-src="/wp-content/themes/advtheme/img/portfolio/p1.png" alt="" uk-img>
 				</div>
 
 				<div class="uk-padding">
-					<h3 class="light">Site Name</h3>
-					<p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="https://loca.games/" target="_blank"><h3 class="light">LocaGames<span class="uk-margin-left" uk-icon="icon: forward"></span></h3></a>
+					<p class="light">企画、制作</p>
 
 				</div>
 			</div>

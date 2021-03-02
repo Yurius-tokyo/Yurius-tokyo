@@ -488,11 +488,26 @@ footer{
 
 #portfolio{
   background: $global-primary-background;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
   h2{
     color:$global-inverse-color;
   }
-
-
+  &::before{
+    position: absolute;
+    content: url(../img/rhombus_l.svg);
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+  &::after{
+    position: absolute;
+    content: url(../img/rhombus_r.svg);
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+  }
 }
 
 /* localization.php */

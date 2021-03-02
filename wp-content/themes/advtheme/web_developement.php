@@ -189,6 +189,15 @@ get_header();
 
 				</div>
 			</div>
+			<!-- <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
+				<div class="uk-padding">
+					<a href="https://loca.games/" target="_blank"><h3 class="light">LocaGames<span class="uk-margin-left" uk-icon="icon: forward"></span></h3></a>
+					<p class="light">企画、制作</p>
+				</div>
+				<div class="uk-padding">
+					<img class="photoframe" data-src="/wp-content/themes/advtheme/img/portfolio/p1.png" alt="" uk-img>
+				</div>
+			</div> -->
 		</div>
 	</section>
 

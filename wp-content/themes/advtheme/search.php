@@ -14,7 +14,7 @@
             $cat = get_the_category();
             $cat_name = $cat[0]->cat_name;
            ?>
-           <div class="uk-card uk-grid-collapse uk-margin uk-box-shadow-medium post_thumb" uk-grid>
+           <div class="uk-card uk-grid-collapse uk-margin uk-box-shadow-medium uk-card-hover" uk-grid>
              <div class="uk-width-2-5@m uk-width-1-1@s uk-card-media-left uk-cover-container post_media">
                  <a href="<?php the_permalink(); ?>"><img src="<?php has_post_thumbnail()? the_post_thumbnail_url() : print('/wp-content/themes/advtheme/img/photo1.png'); ?>" alt="" uk-cover></a>
                  <canvas width="395" height="275"></canvas>

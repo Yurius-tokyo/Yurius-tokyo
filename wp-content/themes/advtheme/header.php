@@ -44,7 +44,7 @@
 	if (has_post_thumbnail()){
    $image = get_the_post_thumbnail_url();
  }else {
- 	$image = '//loca.games/wp-content/uploads/2021/02/slide6.png';
+ 	$image = '/wp-content/themes/advtheme/img/videomain.jpg';
  }
 ?>
 
@@ -62,6 +62,7 @@
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0" />
 		<link rel="icon" href="/wp-content/themes/advtheme/img/favicon.ico" />
 		<!-- UIkit CSS -->
+		<link rel="preload" href="/wp-content/themes/advtheme/style.css" as="style">
 		<link rel="stylesheet" href="/wp-content/themes/advtheme/style.css">
 
 		<!-- UIkit JS -->

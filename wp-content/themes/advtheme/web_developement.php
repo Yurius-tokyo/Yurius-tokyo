@@ -55,7 +55,7 @@ get_header();
 							</div>
 							<div class="uk-card-body">
 									<h3 class="uk-card-title">多言語サイト</h3>
-									<p>グローバル対応サイトを得意としています。翻訳もセットで行います。既存サイトの多言語化カスタマイズも可能です。</p>
+									<p>グローバル対応サイトを得意としています。翻訳もセットで行います。</p>
 							</div>
 					</div>
 				</div>
@@ -200,7 +200,24 @@ get_header();
 			</div> -->
 		</div>
 	</section>
-
+	<section id="pricing" class="uk-section uk-section-default">
+		<div class="uk-container">
+			<h2 class="uk-text-center">FAQ</h2>
+			<dl class="uk-description-list-divider">
+			    <dt class="uk-text-lead">Q. 保守契約は必須ですか?</dt>
+			    <dd>A. いいえ、必須ではありません。必要な場合のみご利用ください。</dd>
+					<dt class="uk-text-lead">Q. スマホ対応は別料金ですか?</dt>
+			    <dd>A. いいえ、全てスマホ対応を含めた料金になっています。</dd>
+					<dt class="uk-text-lead">Q. 今あるサイトを多言語対応にできますか?</dt>
+			    <dd>A. はい。サイトを拝見してから最適な方法をご提案します。</dd>
+					<dt class="uk-text-lead">Q. 翻訳料金はいくらですか?</dt>
+			    <dd>A. ホームページ制作とセットでご依頼頂くと、1ページ1言語あたり3,000円の固定料金です。※ランディングページ、専門文書・法務文書が含まれるページは別途お見積もりとなります
+</dd>
+					<dt class="uk-text-lead">Q. どの言語に翻訳できますか?</dt>
+			    <dd>A. 英語、中国語、スペイン語はセット料金で対応可能です。他の言語は追加料金で対応できる場合がありますので、お問い合わせください。</dd>
+			</dl>
+		</div>
+	</section>
 
 	<?php the_content(); ?>
 

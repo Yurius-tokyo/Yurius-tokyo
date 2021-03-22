@@ -46,7 +46,7 @@
 		</div>
 
 	</footer>
-	<section id="copyright"><span class="uk-text-small">© 2020 Adventures Inc.  All Rights Reserved.</span></section>
+	<section id="copyright"><span class="uk-text-small">© 2021 Adventures Inc.  All Rights Reserved.</span></section>
 	<?php wp_footer(); ?>
 </body>
 </html>

@@ -46,7 +46,7 @@ get_header();
 						</div>
 
 
-						<div id="author" class="uk-card uk-card-body">
+						<div id="author" class="uk-card uk-card-body uk-hidden">
 							<div class="uk-flex uk-flex-middle uk-text-center">
 								<div class="uk-width-2-4@m">
 			            <h3 class="uk-card-title">執筆者</h3>

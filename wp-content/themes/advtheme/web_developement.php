@@ -8,16 +8,14 @@ get_header();
 	<section id="main_web" class="uk-section uk-section-default ">
 		<div class="uk-container uk-height-1-1 uk-flex uk-flex-middle">
 			<div class="uk-child-width-1-2@m uk-child-width-1-2@s" uk-grid>
-
-
-			<div class=" ">
-				<h1 class="">集客に強いウェブサイトを持とう</h1>
-				<div class="uk-text-lead	">ブランディング、販促、インバウンドなどの目的に応じてホームページ制作。マーケティングに強い会社だからこそ、集客に繋がるホームページを一緒に考え、作ります。</div>
-				<div class="uk-margin-large-top">
-					<a class="white_button uk-margin-right" href="#contact">お見積もり</a>
-					<a class="dark_button" href="#pricing">料金例</a>
+				<div class=" ">
+					<h1 class="">集客に強いウェブサイトを持とう</h1>
+					<div class="uk-text-lead	">ブランディング、販促、インバウンドなどの目的に応じてホームページ制作。マーケティングに強い会社だからこそ、集客に繋がるホームページを一緒に考え、作ります。</div>
+					<div class="uk-margin-large-top">
+						<a class="white_button uk-margin-right" href="#contact">お見積もり</a>
+						<a class="dark_button" href="#pricing">料金例</a>
+					</div>
 				</div>
-			</div>
 			</div>
 		</div>
 
@@ -179,18 +177,26 @@ get_header();
 		<div class="uk-container">
 			<h2 class="uk-text-center">ポートフォリオ</h2>
 			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
-				<div class="uk-padding">
-					<img class="photoframe" data-src="/wp-content/themes/advtheme/img/portfolio/p1.png" alt="" uk-img>
+				<div class="uk-padding@m">
+					<a href="#modal-media-image" uk-toggle alt="Ebisu Language Cafe">
+						<img class="photoframe" src="/wp-content/themes/advtheme/img/portfolio/mock2.png" alt="">
+					</a>
+					<div id="modal-media-image" class="uk-flex-top" uk-modal>
+					    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+					        <button class="uk-modal-close-outside" type="button" uk-close></button>
+					        <img src="/wp-content/themes/advtheme/img/portfolio/mock1.png" alt="">
+					    </div>
+					</div>
 				</div>
 
 				<div class="uk-padding">
-					<a href="https://loca.games/" target="_blank"><h3 class="light">LocaGames<span class="uk-margin-left" uk-icon="icon: forward"></span></h3></a>
-					<p class="light">企画、制作</p>
+					<h3 class="light">Ebisu Language Cafe</span></h3>
+					<p class="light">構成、デザイン、制作</p>
 
 				</div>
 			</div>
 			<!-- <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
-				<div class="uk-padding">
+				<div class="uk-padding@m">
 					<a href="https://loca.games/" target="_blank"><h3 class="light">LocaGames<span class="uk-margin-left" uk-icon="icon: forward"></span></h3></a>
 					<p class="light">企画、制作</p>
 				</div>

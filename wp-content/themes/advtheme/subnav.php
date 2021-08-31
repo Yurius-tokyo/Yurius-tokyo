@@ -16,6 +16,7 @@
             <li class="<?php $cat_slug==='tips_business' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_business/">ビジネス</a></li>
             <li class="<?php $cat_slug==='tips_marketing' && print 'uk-active' ;?>"><a href="/category/tips_marketing/">マーケティング</a></li>
             <li class="<?php $cat_slug==='tips_translation' && print 'uk-active' ;?>"><a href="/category/tips_translation/">翻訳</a></li>
+            <li class="<?php $cat_slug==='tips_gamedev' && print 'uk-active' ;?>"><a href="/category/tips_gamedev/">ゲーム開発</a></li>
             <li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_web/">コラム</a></li>
         </ul>
         <div class="uk-navbar-item">

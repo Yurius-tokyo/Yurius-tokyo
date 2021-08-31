@@ -10,7 +10,7 @@ get_header();
 			<div class="uk-child-width-1-2@m uk-child-width-1-2@s" uk-grid>
 				<div class=" ">
 					<h1 class="">集客に強いウェブサイトを持とう</h1>
-					<div class="uk-text-lead	">ブランディング、販促、インバウンドなどの目的に応じてホームページ制作。マーケティングに強い会社だからこそ、集客に繋がるホームページを一緒に考え、作ります。</div>
+					<div class="uk-text-lead	">ブランディング、販促、インバウンドなどの目的に応じてウェブサイト制作。マーケティングに強い会社だからこそ、集客に繋がるウェブサイトを一緒に考え、作ります。</div>
 					<div class="uk-margin-large-top">
 						<a class="white_button uk-margin-right" href="#contact">お見積もり</a>
 						<a class="dark_button" href="#pricing">料金例</a>
@@ -31,7 +31,7 @@ get_header();
 	            </div>
 	            <div class="uk-card-body">
 	                <h3 class="uk-card-title">コーポレートサイト</h3>
-	                <p>会社紹介、サービス紹介、飲食店、美容室などのビジネス用ホームページを制作します。</p>
+	                <p>会社紹介、サービス紹介、飲食店、美容室などのビジネス用ウェブサイトを制作します。</p>
 	            </div>
 	        </div>
 	    	</div>
@@ -175,8 +175,8 @@ get_header();
 
 	<section id="portfolio" class="uk-section uk-section-default">
 		<div class="uk-container">
-			<h2 class="uk-text-center">ポートフォリオ</h2>
-			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
+			<h2 class="uk-text-center uk-margin-large-bottom">ポートフォリオ</h2>
+			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle uk-margin-large-bottom" uk-grid>
 				<div class="uk-padding@m">
 					<a href="#modal-media-image" uk-toggle alt="Ebisu Language Cafe">
 						<img class="photoframe" src="/wp-content/themes/advtheme/img/portfolio/mock2.png" alt="">
@@ -195,15 +195,15 @@ get_header();
 
 				</div>
 			</div>
-			<!-- <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
+			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle uk-margin-large-bottom" uk-grid>
 				<div class="uk-padding@m">
-					<a href="https://loca.games/" target="_blank"><h3 class="light">LocaGames<span class="uk-margin-left" uk-icon="icon: forward"></span></h3></a>
-					<p class="light">企画、制作</p>
+					<a href="https://bellyselect.com" target="_blank"><h3 class="light">ベリーダンス衣装セレクトショップ Belly Select<span class="uk-margin-left" uk-icon="icon: forward"></span></h3></a>
+					<p class="light">企画、デザイン、制作</p>
 				</div>
 				<div class="uk-padding">
-					<img class="photoframe" data-src="/wp-content/themes/advtheme/img/portfolio/p1.png" alt="" uk-img>
+					<img class="photoframe" data-src="/wp-content/themes/advtheme/img/portfolio/p2.png" alt="" uk-img>
 				</div>
-			</div> -->
+			</div>
 		</div>
 	</section>
 	<section id="pricing" class="uk-section uk-section-default">
@@ -217,7 +217,7 @@ get_header();
 					<dt class="uk-text-lead">Q. 今あるサイトを多言語対応にできますか?</dt>
 			    <dd>A. はい。サイトを拝見してから最適な方法をご提案します。</dd>
 					<dt class="uk-text-lead">Q. 翻訳料金はいくらですか?</dt>
-			    <dd>A. ホームページ制作とセットでご依頼頂くと、1ページ1言語あたり3,000円の固定料金です。※ランディングページ、専門文書・法務文書が含まれるページは別途お見積もりとなります
+			    <dd>A. ウェブサイト制作とセットでご依頼頂くと、1ページ1言語あたり3,000円の固定料金です。※ランディングページ、専門文書・法務文書が含まれるページは別途お見積もりとなります
 </dd>
 					<dt class="uk-text-lead">Q. どの言語に翻訳できますか?</dt>
 			    <dd>A. 英語、中国語、スペイン語はセット料金で対応可能です。他の言語は追加料金で対応できる場合がありますので、お問い合わせください。</dd>

@@ -28,7 +28,7 @@
 	    	<div>
 					<h3>サービス</h3>
 	    		<ul class="uk-list uk-link-text">
-						<li><a href="/web_development/">ホームページ制作</a></li>
+						<li><a href="/web_development/">ウェブサイト制作</a></li>
 						<li><a href="/marketing/">マーケティング支援</a></li>
 						<li><a href="/localization/">翻訳</a></li>
 	    		</ul>
@@ -37,7 +37,7 @@
 					<ul class="uk-list uk-link-text">
 						<li><a href="/company/">会社案内</a></li>
 						<li><a href="/news/">ニュース</a></li>
-						<li><a href="https://global.adventuresjp.com/" target="_blank" class="">Global Services<span class="uk-margin-left" uk-icon="icon: forward"></span></a></li>
+						<li><a href="https://global.adventuresjp.com/" target="_blank" class="">English<span class="uk-margin-left" uk-icon="icon: forward"></span></a></li>
 
 
 	    		</ul>

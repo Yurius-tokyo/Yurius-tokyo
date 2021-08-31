@@ -18,7 +18,7 @@
 				$meta_desc = 'Web制作、マーケティング、多言語化などについてのお役立ち記事です。';
 				break;
 			case 'web_development':
-				$meta_desc = 'ブランディング、販促、インバウンドなどの目的に応じてホームページ制作。マーケティングに強い会社だからこそ、集客に繋がるホームページを一緒に考え、作ります。サービス内容や料金など。';
+				$meta_desc = 'ブランディング、販促、インバウンドなどの目的に応じてウェブサイト制作。マーケティングに強い会社だからこそ、集客に繋がるウェブサイトを一緒に考え、作ります。サービス内容や料金など。';
 				break;
 			case 'marketing':
 				$meta_desc = 'マーケティング支援について。広告からリードを獲得したい。オンラインストアの売り上げを増やしたい。自社に合った集客方法を知りたい。コミュニティを活発にしたい。様々なニーズにお応えします。';
@@ -104,18 +104,18 @@
 											<li class="<?php $cat_slug==='tips_business' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_business/">ビジネス</a></li>
 					            <li class="<?php $cat_slug==='tips_marketing' && print 'uk-active' ;?>"><a href="/category/tips_marketing/">マーケティング</a></li>
 					            <li class="<?php $cat_slug==='tips_translation' && print 'uk-active' ;?>"><a href="/category/tips_translation/">翻訳</a></li>
-					            <li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_game/">ゲーム</a></li>
+					            <li class="<?php $cat_slug==='tips_gamedev' && print 'uk-active' ;?>"><a href="/category/tips_gamedev/">ゲーム開発</a></li>
 	                </ul>
 	            </div>
 	        </li>
-	        <li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ホームページ制作</a></li>
-					<li class="<?php $pagename==='marketing' && print 'uk-active' ;?>"><a href="/marketing/">マーケティング支援</a></li>
+	        <li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ウェブサイト制作</a></li>
 					<li class="<?php $pagename==='localization' && print 'uk-active' ;?>"><a href="/localization/">翻訳</a></li>
+					<li class="<?php $pagename==='marketing' && print 'uk-active' ;?>"><a href="/marketing/">マーケティング支援</a></li>
 					<li class="<?php $pagename==='company' && print 'uk-active' ;?> uk-hidden"><a href="/company/">会社案内</a></li>
 	        <li><a href="/#contact">お見積もり</a></li>
 	    	</ul>
 				<div class="uk-navbar-item uk-visible@m">
-          <a href="https://global.adventuresjp.com/" target="_blank" class="uk-button uk-button-primary">Global Services<span class="uk-margin-left" uk-icon="icon: forward"></span></a>
+          <a href="https://global.adventuresjp.com/" target="_blank" class="uk-button uk-button-primary">English<span class="uk-margin-left" uk-icon="icon: forward"></span></a>
         </div>
 	    	<!-- /PC menu -->
 			</div>
@@ -137,16 +137,17 @@
 									<li class="<?php $cat_slug==='tips_business' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_business/">ビジネス</a></li>
 									<li class="<?php $cat_slug==='tips_marketing' && print 'uk-active' ;?>"><a href="/category/tips_marketing/">マーケティング</a></li>
 									<li class="<?php $cat_slug==='tips_translation' && print 'uk-active' ;?>"><a href="/category/tips_translation/">翻訳</a></li>
-									<li class="<?php $cat_slug==='tips_web' && print 'uk-active' ;?> uk-hidden"><a href="/category/tips_game/">ゲーム</a></li>
+									<li class="<?php $cat_slug==='tips_gamedev' && print 'uk-active' ;?>"><a href="/category/tips_gamedev/">ゲーム開発</a></li>
 	            	</ul>
 	            </li>
 
-							<li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ホームページ制作</a></li>
-							<li class="<?php $pagename==='marketing' && print 'uk-active' ;?>"><a href="/marketing/">マーケティング支援</a></li>
+							<li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ウェブサイト制作</a></li>
 							<li class="<?php $pagename==='localization' && print 'uk-active' ;?>"><a href="/localization/">翻訳</a></li>
+							<li class="<?php $pagename==='marketing' && print 'uk-active' ;?>"><a href="/marketing/">マーケティング支援</a></li>
 							<hr />
 							<li class="<?php $pagename==='company' && print 'uk-active' ;?>"><a href="/company/">会社案内</a></li>
 			        <li><a href="/#contact">お見積もり</a></li>
+							<li><a href="https://global.adventuresjp.com/" target="_blank">English<span class="uk-margin-left" uk-icon="icon: forward"></span></a></li>
 	        </ul>
 					<?php get_search_form(); ?>
 			  </div>

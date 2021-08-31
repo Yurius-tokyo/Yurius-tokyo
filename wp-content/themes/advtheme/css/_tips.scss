@@ -8,6 +8,12 @@
   line-height: 2;
 }
 
+#tips_pagination{
+  .page-numbers.current li{
+    color: $global-link-hover-color;
+  }
+}
+
 
 /* subnav.php */
 #sub_nav{

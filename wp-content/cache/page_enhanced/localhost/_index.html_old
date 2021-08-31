@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
+	<head><style>img.lazy{min-height:1px}</style><link rel="preload" href="http://localhost/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
 
 		<meta charset="UTF-8">
 		<meta name="keywords" content="Adventures Inc.">
@@ -46,7 +46,7 @@ img.emoji {
 	<link rel='stylesheet' id='wp-block-library-css'  href='http://localhost/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
 <link rel='stylesheet' id='wordpress-popular-posts-css-css'  href='http://localhost/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.2.4' type='text/css' media='all' />
 <script type='application/json' id='wpp-json'>
-{"sampling_active":0,"sampling_rate":100,"ajax_url":"http:\/\/localhost\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","ID":0,"token":"83b358a73b","lang":0,"debug":0}
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"http:\/\/localhost\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","ID":0,"token":"440971a5a1","lang":0,"debug":0}
 </script>
 <script type='text/javascript' src='http://localhost/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=5.2.4' id='wpp-js-js'></script>
 <link rel="https://api.w.org/" href="http://localhost/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/xmlrpc.php?rsd" />
@@ -68,7 +68,7 @@ img.emoji {
 		<!-- End Google Tag Manager (noscript) -->
 		<header id="header" class="uk-navbar-container" uk-navbar uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 80">
 			<div class="uk-navbar-left">
-				<a class="uk-navbar-item" href="/"><img width="200" height="50" id="logo" src="/wp-content/themes/advtheme/img/logo_primary.svg" uk-svg></a>
+				<a class="uk-navbar-item" href="/"><img class="lazy" width="200" height="50" id="logo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%2050'%3E%3C/svg%3E" data-src="/wp-content/themes/advtheme/img/logo_primary.svg" uk-svg></a>
 				<!-- <a class="uk-navbar-item uk-logo" href="/">Adventures Inc.</a> -->
 			</div>
 			<div id="menu-pc" class="uk-navbar-right">
@@ -144,7 +144,7 @@ img.emoji {
 				<div class="uk-text-lead	">Webサイト制作からマーケティングまで、 オンラインビジネスを総合サポート </div> -->
 
 			</div>
-			<a href="#latest_blogs" class="circle_button"><img class="down_arrow" src="/wp-content/themes/advtheme/img/down_arrow.svg"></a>
+			<a href="#latest_blogs" class="circle_button"><img class="down_arrow lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="/wp-content/themes/advtheme/img/down_arrow.svg"></a>
 		</div>
 
 	</section>
@@ -157,7 +157,7 @@ img.emoji {
 									<a href="http://localhost/%e3%82%b3%e3%83%bc%e3%83%89/" class=" uk-inline">
 						<div class="uk-card uk-card-default uk-card-hover">
 							<div class="uk-card-media-top uk-cover-container post_media">
-								<img src="/wp-content/themes/advtheme/img/photo3.jpg" uk-cover>
+								<img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="/wp-content/themes/advtheme/img/photo3.jpg" uk-cover>
 								<canvas width="375" height="220"></canvas>
 
 							</div>
@@ -171,7 +171,7 @@ img.emoji {
 									<a href="http://localhost/%e6%97%a2%e5%ad%98%e3%81%ae%e3%83%9b%e3%83%bc%e3%83%a0%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e5%a4%9a%e8%a8%80%e8%aa%9e%e5%8c%96%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%954%e3%83%91%e3%82%bf%e3%83%bc%e3%83%b3/" class=" uk-inline">
 						<div class="uk-card uk-card-default uk-card-hover">
 							<div class="uk-card-media-top uk-cover-container post_media">
-								<img src="http://localhost/wp-content/uploads/2020/11/photo2.jpg" uk-cover>
+								<img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20325%20250'%3E%3C/svg%3E" data-src="http://localhost/wp-content/uploads/2020/11/photo2.jpg" uk-cover>
 								<canvas width="375" height="220"></canvas>
 
 							</div>
@@ -185,7 +185,7 @@ img.emoji {
 									<a href="http://localhost/no-photo/" class=" uk-inline">
 						<div class="uk-card uk-card-default uk-card-hover">
 							<div class="uk-card-media-top uk-cover-container post_media">
-								<img src="/wp-content/themes/advtheme/img/photo3.jpg" uk-cover>
+								<img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="/wp-content/themes/advtheme/img/photo3.jpg" uk-cover>
 								<canvas width="375" height="220"></canvas>
 
 							</div>
@@ -205,7 +205,7 @@ img.emoji {
 
 
 	<section id="services" class="uk-section">
-		<img class="oval1" src="/wp-content/themes/advtheme/img/oval.svg" alt="">
+		<img class="oval1 lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="/wp-content/themes/advtheme/img/oval.svg" alt="">
 		<div class="uk-container">
 			<h2 class="light uk-text-center">サービス</h2>
 			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
@@ -220,7 +220,7 @@ img.emoji {
 				</div>
 			</div>
 			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
-				<img class="oval2" src="/wp-content/themes/advtheme/img/oval.svg" alt="">
+				<img class="oval2 lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="/wp-content/themes/advtheme/img/oval.svg" alt="">
 				<div class="uk-padding">
 					<h3 class="light">マーケティング</h3>
 					<p class="light">どんな商材でもデジタルマーケティングは欠かせない時代になりました。
@@ -232,7 +232,7 @@ img.emoji {
 				</div>
 			</div>
 			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
-				<img class="oval3" src="/wp-content/themes/advtheme/img/oval.svg" alt="">
+				<img class="oval3 lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="/wp-content/themes/advtheme/img/oval.svg" alt="">
 				<div class="uk-padding service3">
 					<img class="" data-src="/wp-content/themes/advtheme/img/neon_loca.png" alt="" uk-img>
 				</div>
@@ -275,7 +275,7 @@ img.emoji {
 		<div class="uk-container">
 			<h2 class="uk-text-center">お見積もりご依頼</h2>
 			<div class="uk-flex uk-flex-center uk-flex-middle">
-				<div class="wpforms-container wpforms-container-full" id="wpforms-12"><form id="wpforms-form-12" class="wpforms-validate wpforms-form" data-formid="12" method="post" enctype="multipart/form-data" action="/" data-token="9900c7056274a9b8bc86b5100e7a02aa"><noscript class="wpforms-error-noscript">このフォームに入力するには、ブラウザーで JavaScript を有効にしてください。</noscript><div class="wpforms-field-container"><div id="wpforms-12-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><input type="text" id="wpforms-12-field_0" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][0]" placeholder="氏名" required></div><div id="wpforms-12-field_5-container" class="wpforms-field wpforms-field-text" data-field-id="5"><input type="text" id="wpforms-12-field_5" class="wpforms-field-medium" name="wpforms[fields][5]" placeholder="会社名" ></div><div id="wpforms-12-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><input type="email" id="wpforms-12-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" placeholder="メールアドレス" required></div><div id="wpforms-12-field_6-container" class="wpforms-field wpforms-field-checkbox wpforms-list-3-columns" data-field-id="6"><label class="wpforms-field-label" for="wpforms-12-field_6">ご依頼内容を選択してください <span class="wpforms-required-label">*</span></label><ul id="wpforms-12-field_6" class="wpforms-field-required"><li class="choice-1 depth-1"><input type="checkbox" id="wpforms-12-field_6_1" name="wpforms[fields][6][]" value="ホームページ制作" required ><label class="wpforms-field-label-inline" for="wpforms-12-field_6_1">ホームページ制作</label></li><li class="choice-2 depth-1"><input type="checkbox" id="wpforms-12-field_6_2" name="wpforms[fields][6][]" value="マーケティング代行" required ><label class="wpforms-field-label-inline" for="wpforms-12-field_6_2">マーケティング代行</label></li><li class="choice-3 depth-1"><input type="checkbox" id="wpforms-12-field_6_3" name="wpforms[fields][6][]" value="翻訳/ローカライズ" required ><label class="wpforms-field-label-inline" for="wpforms-12-field_6_3">翻訳/ローカライズ</label></li></ul></div><div id="wpforms-12-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><textarea id="wpforms-12-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="ご依頼の詳細" required></textarea></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="12"><input type="hidden" name="wpforms[author]" value="1"><button type="submit" name="wpforms[submit]" class="wpforms-submit " id="wpforms-submit-12" value="wpforms-submit" aria-live="assertive" data-alt-text="送信中…" data-submit-text="送信">送信</button></div></form></div>  <!-- .wpforms-container -->
+				<div class="wpforms-container wpforms-container-full" id="wpforms-12"><form id="wpforms-form-12" class="wpforms-validate wpforms-form" data-formid="12" method="post" enctype="multipart/form-data" action="/" data-token="2c634638fd0d7c51ab1f69b1a56d4039"><noscript class="wpforms-error-noscript">このフォームに入力するには、ブラウザーで JavaScript を有効にしてください。</noscript><div class="wpforms-field-container"><div id="wpforms-12-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><input type="text" id="wpforms-12-field_0" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][0]" placeholder="氏名" required></div><div id="wpforms-12-field_5-container" class="wpforms-field wpforms-field-text" data-field-id="5"><input type="text" id="wpforms-12-field_5" class="wpforms-field-medium" name="wpforms[fields][5]" placeholder="会社名" ></div><div id="wpforms-12-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><input type="email" id="wpforms-12-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" placeholder="メールアドレス" required></div><div id="wpforms-12-field_6-container" class="wpforms-field wpforms-field-checkbox wpforms-list-3-columns" data-field-id="6"><label class="wpforms-field-label" for="wpforms-12-field_6">ご依頼内容を選択してください <span class="wpforms-required-label">*</span></label><ul id="wpforms-12-field_6" class="wpforms-field-required"><li class="choice-1 depth-1"><input type="checkbox" id="wpforms-12-field_6_1" name="wpforms[fields][6][]" value="ホームページ制作" required ><label class="wpforms-field-label-inline" for="wpforms-12-field_6_1">ホームページ制作</label></li><li class="choice-2 depth-1"><input type="checkbox" id="wpforms-12-field_6_2" name="wpforms[fields][6][]" value="マーケティング代行" required ><label class="wpforms-field-label-inline" for="wpforms-12-field_6_2">マーケティング代行</label></li><li class="choice-3 depth-1"><input type="checkbox" id="wpforms-12-field_6_3" name="wpforms[fields][6][]" value="翻訳/ローカライズ" required ><label class="wpforms-field-label-inline" for="wpforms-12-field_6_3">翻訳/ローカライズ</label></li></ul></div><div id="wpforms-12-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><textarea id="wpforms-12-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="ご依頼の詳細" required></textarea></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="12"><input type="hidden" name="wpforms[author]" value="1"><button type="submit" name="wpforms[submit]" class="wpforms-submit " id="wpforms-submit-12" value="wpforms-submit" aria-live="assertive" data-alt-text="送信中…" data-submit-text="送信">送信</button></div></form></div>  <!-- .wpforms-container -->
 			</div>
 		</div>
 	</section>
@@ -336,7 +336,7 @@ var codePrettifyLoaderBaseUrl = "http:\/\/localhost\/wp-content\/plugins\/code-p
 var wpforms_settings = {"val_required":"\u3053\u306e\u6b04\u306f\u5165\u529b\u5fc5\u9808\u3067\u3059\u3002","val_url":"\u6709\u52b9\u306a URL \u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002","val_email":"\u6709\u52b9\u306a\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002","val_email_suggestion":"{suggestion} \u3092\u610f\u5473\u3057\u307e\u3057\u305f\u304b\uff1f","val_email_suggestion_title":"\u30af\u30ea\u30c3\u30af\u3057\u3066\u3053\u306e\u63d0\u6848\u3092\u53d7\u3051\u5165\u308c\u307e\u3059\u3002","val_email_restricted":"This email address is not allowed.","val_number":"\u6709\u52b9\u306a\u5024\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002","val_confirm":"\u30d5\u30a3\u30fc\u30eb\u30c9\u306e\u5024\u304c\u4e00\u81f4\u3057\u307e\u305b\u3093\u3002","val_fileextension":"\u30d5\u30a1\u30a4\u30eb\u30bf\u30a4\u30d7\u304c\u8a31\u53ef\u3055\u308c\u3066\u3044\u307e\u305b\u3093\u3002","val_filesize":"\u30d5\u30a1\u30a4\u30eb\u304c\u8a31\u53ef\u3055\u308c\u3066\u3044\u308b\u6700\u5927\u30b5\u30a4\u30ba\u3092\u8d85\u3048\u3066\u3044\u307e\u3059\u3002\u30d5\u30a1\u30a4\u30eb\u306f\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u305b\u3093\u3067\u3057\u305f\u3002","val_time12h":"\u6642\u523b\u306f12\u6642\u9593\u8868\u793a\u306e AM\/PM \u5f62\u5f0f\u3067\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044 (\u4f8b: 8:45 AM)\u3002","val_time24h":"24\u6642\u9593\u5f62\u5f0f\u3067\u6642\u523b\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044 (\u4f8b: 22:45)\u3002","val_requiredpayment":"\u652f\u6255\u3044\u304c\u5fc5\u8981\u3067\u3059\u3002","val_creditcard":"\u6709\u52b9\u306a\u30af\u30ec\u30b8\u30c3\u30c8\u30ab\u30fc\u30c9\u756a\u53f7\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002","val_post_max_size":"\u9078\u629e\u3055\u308c\u305f\u30d5\u30a1\u30a4\u30eb\u306e\u5408\u8a08\u30b5\u30a4\u30ba {totalSize} Mb\u304c\u8a31\u53ef\u3055\u308c\u3066\u3044\u308b\u4e0a\u9650 {maxSize} Mb\u3092\u8d85\u3048\u3066\u3044\u307e\u3059\u3002","val_checklimit":"\u9078\u629e\u53ef\u80fd\u306a\u6570\u3092\u8d85\u3048\u307e\u3057\u305f: {#}\u3002","val_limit_characters":"\u6700\u5927{limit}\u6587\u5b57\u4e2d{count}\u6587\u5b57\u3002","val_limit_words":"\u6700\u5927{limit}\u30ef\u30fc\u30c9\u4e2d{count}\u3002","val_recaptcha_fail_msg":"Google reCAPTCHA \u306e\u78ba\u8a8d\u306b\u5931\u6557\u3057\u307e\u3057\u305f\u3002\u3057\u3070\u3089\u304f\u3057\u3066\u304b\u3089\u3082\u3046\u4e00\u5ea6\u304a\u8a66\u3057\u304f\u3060\u3055\u3044\u3002","val_empty_blanks":"Please fill out all blanks.","post_max_size":"104857600","uuid_cookie":"","locale":"ja","wpforms_plugin_url":"http:\/\/localhost\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"http:\/\/localhost\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"]}
 /* ]]> */
 </script>
-</body>
+<script>window.w3tc_lazyload=1,window.lazyLoadOptions={elements_selector:".lazy",callback_loaded:function(t){var e;try{e=new CustomEvent("w3tc_lazyload_loaded",{detail:{e:t}})}catch(a){(e=document.createEvent("CustomEvent")).initCustomEvent("w3tc_lazyload_loaded",!1,!1,{e:t})}window.dispatchEvent(e)}}</script><script async src="http://localhost/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js"></script></body>
 </html>
 <script>
 let headH = 80;
@@ -403,6 +403,7 @@ for (let i = 0; i < links.length; i++) {
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 Page Caching using disk: enhanced 
+Lazy Loading
 
-Served from: localhost @ 2021-05-25 22:32:00 by W3 Total Cache
+Served from: localhost @ 2021-07-24 14:26:37 by W3 Total Cache
 -->

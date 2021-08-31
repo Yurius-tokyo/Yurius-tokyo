@@ -70,7 +70,7 @@ get_header();
 
 				<div class="uk-padding">
 					<h3 class="light">ウェブ制作</h3>
-					<p class="light">ビジネスの拡大には、プロフェッショナルなホームページが欠かせませんね。コーポレートサイト、Eコマース、ランディングページなど、目的に合わせて効果的なウェブサイトを制作します。</p>
+					<p class="light">ビジネスの拡大には、プロフェッショナルなウェブサイトが欠かせませんね。コーポレートサイト、Eコマース、ランディングページなど、目的に合わせて効果的なウェブサイトを制作します。</p>
 					<a href="/web_development/" class="white_button uk-margin-medium-top">詳しく見る<span uk-icon="arrow-right"></span></a>
 				</div>
 			</div>

@@ -12,7 +12,7 @@ get_header();
 			<div class="uk-child-width-1-1@m uk-child-width-1-1@s" uk-grid>
 				<div class=" ">
 					<h1 class="">サービスを世界へ届けよう</h1>
-					<div class="uk-text-lead	">ただの翻訳サービスではありません。オンラインビジネスの多国籍化をサポートします</div>
+					<div class="uk-text-lead	">ローカリゼーションを通じて、オンラインビジネスの多国籍化をサポートします</div>
 					<div class="uk-margin-large-top">
 						<a class="white_button uk-margin-right" href="#contact">お見積もり</a>
 						<a class="dark_button" href="#pricing">料金例</a>
@@ -111,7 +111,7 @@ get_header();
 								<h3 class="uk-card-title">一般文書全般</h3>
 								<h4>10円/一語~</h4>
 		            <p>外国語→日本語</p>
-								<h4>10円/一文字~</h4>
+								<h4>7円/一文字~</h4>
 								<p>日本語→外国語</p>
 								<ul class="uk-list uk-margin-large uk-text-left">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>校正</li>
@@ -128,9 +128,9 @@ get_header();
 		        <div class="uk-card uk-card-default uk-card-body price_box">
 							<div class="price_inner">
 								<h3 class="uk-card-title">ゲーム、フィクション</h3>
-								<h4>約3万円~</h4>
-		            <p>プロジェクトあたり</p>
-								<h4>20円/一文字~</h4>
+								<h4>10円/一語~</h4>
+		            <p>外国語→日本語</p>
+								<h4>10円/一文字~</h4>
 								<p>日本語→外国語</p>
 								<ul class="uk-list uk-margin-large uk-text-left">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>校正</li>

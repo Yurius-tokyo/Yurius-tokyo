@@ -3,9 +3,9 @@
  * Template Name: Tips */
 get_header();
 
-$paged = (int) get_query_var('paged');
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $args = array(
-	'posts_per_page' => 20,
+	'posts_per_page' => 10,
 	'paged' => $paged,
 	'orderby' => 'post_date',
 	'order' => 'DESC',
@@ -60,11 +60,11 @@ $the_query = new WP_Query($args);
 								$cat_name = $cat[0]->cat_name;
 					?>
 					<div class="uk-card uk-grid-collapse uk-margin uk-box-shadow-medium uk-card-hover" uk-grid>
-				    <div class="uk-width-2-5@m uk-width-1-1@s uk-card-media-left uk-cover-container post_media">
+				    <div class="uk-width-1-4@m uk-width-1-1@s uk-card-media-left uk-cover-container post_media">
 				        <a href="<?php the_permalink(); ?>"><img src="<?php has_post_thumbnail()? the_post_thumbnail_url() : print('/wp-content/themes/advtheme/img/photo3.jpg'); ?>" alt="" uk-cover></a>
 				        <canvas width="395" height="275"></canvas>
 				    </div>
-				    <div class="uk-width-3-5@m uk-width-1-1@s">
+				    <div class="uk-width-3-4@m uk-width-1-1@s">
 							<a href="<?php the_permalink(); ?>">
 				        <div class="uk-card-body">
 
@@ -76,9 +76,28 @@ $the_query = new WP_Query($args);
 							</a>
 				    </div>
 					</div>
-					<?php endwhile; endif;
+					<?php endwhile; 
+					endif;
 					wp_reset_postdata(); // End Post ?>
 
+					<nav id="tips_pagination" class="uk-margin-large-top">
+						<ul class="uk-pagination uk-flex-center" uk-margin>
+							<?php
+							$big = 999999999; // need an unlikely integer
+
+							echo paginate_links( array(
+									'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+									'format' => '?paged=%#%',
+									'current' => max( 1, get_query_var('paged') ),
+									'total' => $the_query->max_num_pages,
+									'prev_text' => '<li><span uk-pagination-previous></span></li>',
+								  'next_text' => '<li><span uk-pagination-next></span></li>',
+									'before_page_number' => '<li>',
+									'after_page_number' => '</li>'
+							) );
+							?>
+						</ul>
+					</nav>
 				</div>
 				<?php get_sidebar(); ?>
 			</div>

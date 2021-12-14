@@ -74,16 +74,15 @@ get_header();
 					<a href="/web_development/" class="white_button uk-margin-medium-top">詳しく見る<span uk-icon="arrow-right"></span></a>
 				</div>
 			</div>
-			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
+			<div id="locagames" class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>
 				<img class="oval2" src="/wp-content/themes/advtheme/img/oval.svg" alt="">
 				<div class="uk-padding">
-					<h3 class="light">マーケティング</h3>
-					<p class="light">どんな商材でもデジタルマーケティングは欠かせない時代になりました。
-テキスト広告、動画広告、SNS、コンテンツマーケティングなど様々な手法があります。売り上げを拡大するために最適なツールを商材に合わせてご提案し、サポートします。</p>
-					<a href="/marketing/" class="white_button uk-margin-medium-top">詳しく見る<span uk-icon="arrow-right"></span></a>
+					<h3 class="light">ゲーム販売支援</h3>
+					<p class="light">PCゲームマーケットプレイスLocaGamesを通じて、インディーゲームの販売や海外展開の支援を行っています。</p>
+					<a href="https://loca.games/" class="white_button uk-margin-medium-top">詳しく見る<span uk-icon="arrow-right"></span></a>
 				</div>
 				<div class="uk-padding service2">
-					<img class="" data-src="/wp-content/themes/advtheme/img/neon_mark.png" alt="" uk-img>
+					<img class="" data-src="/wp-content/themes/advtheme/img/lg_logo_square.png" alt="" uk-img>
 				</div>
 			</div>
 			<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle" uk-grid>

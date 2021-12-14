@@ -108,11 +108,20 @@
 	                </ul>
 	            </div>
 	        </li>
-	        <li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ウェブサイト制作</a></li>
-					<li class="<?php $pagename==='localization' && print 'uk-active' ;?>"><a href="/localization/">翻訳</a></li>
-					<li class="<?php $pagename==='marketing' && print 'uk-active' ;?>"><a href="/marketing/">マーケティング支援</a></li>
-					<li class="<?php $pagename==='company' && print 'uk-active' ;?> uk-hidden"><a href="/company/">会社案内</a></li>
-	        <li><a href="/#contact">お見積もり</a></li>
+			<li>
+				<a href="#" class="">サービス</a>
+				<div class="uk-navbar-dropdown">
+					<ul class="uk-nav uk-navbar-dropdown-nav">
+						<li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ウェブサイト制作</a></li>
+						<li class=""><a href="/#locagames">ゲーム販売支援</a></li>
+						<li class="<?php $pagename==='localization' && print 'uk-active' ;?>"><a href="/localization/">翻訳</a></li>
+						
+					</ul>
+            	</div>
+			</li>
+
+			<li class="<?php $pagename==='company' && print 'uk-active' ;?> uk-hidden"><a href="/company/">会社案内</a></li>
+	        <li><a href="/#contact">お問い合わせ</a></li>
 	    	</ul>
 				<div class="uk-navbar-item uk-visible@m">
           <a href="https://global.adventuresjp.com/" target="_blank" class="uk-button uk-button-primary">English<span class="uk-margin-left" uk-icon="icon: forward"></span></a>
@@ -129,7 +138,7 @@
 		    <div class="uk-offcanvas-bar" >
 		    	<button class="uk-offcanvas-close" type="button" uk-close></button>
 	        <ul class="uk-nav uk-nav-default">
-							<li class="<?php $pagename==='home' && print 'uk-active' ;?>"><a href="/">トップ</a></li>
+				<li class="<?php $pagename==='home' && print 'uk-active' ;?>"><a href="/">トップ</a></li>
 	            <li class="uk-parent"><a href="/tips/">お役立ち記事</a>
 	            	<ul class="uk-nav-sub">
 									<li class="<?php $pagename==='tips' && print 'uk-active';?>"><a href="/tips/">全て</a></li>
@@ -140,13 +149,16 @@
 									<li class="<?php $cat_slug==='tips_gamedev' && print 'uk-active' ;?>"><a href="/category/tips_gamedev/">ゲーム開発</a></li>
 	            	</ul>
 	            </li>
-
-							<li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ウェブサイト制作</a></li>
-							<li class="<?php $pagename==='localization' && print 'uk-active' ;?>"><a href="/localization/">翻訳</a></li>
-							<li class="<?php $pagename==='marketing' && print 'uk-active' ;?>"><a href="/marketing/">マーケティング支援</a></li>
+				<li class="uk-parent"><a href="#">サービス</a>
+	            	<ul class="uk-nav-sub">
+						<li class="<?php $pagename==='web_development' && print 'uk-active' ;?>"><a href="/web_development/">ウェブサイト制作</a></li>
+						<li class=""><a href="/#locagames">ゲーム販売支援</a></li>
+						<li class="<?php $pagename==='localization' && print 'uk-active' ;?>"><a href="/localization/">翻訳</a></li>
+	            	</ul>
+	            </li>
 							<hr />
 							<li class="<?php $pagename==='company' && print 'uk-active' ;?>"><a href="/company/">会社案内</a></li>
-			        <li><a href="/#contact">お見積もり</a></li>
+			        <li><a href="/#contact">お問い合わせ</a></li>
 							<li><a href="https://global.adventuresjp.com/" target="_blank">English<span class="uk-margin-left" uk-icon="icon: forward"></span></a></li>
 	        </ul>
 					<?php get_search_form(); ?>

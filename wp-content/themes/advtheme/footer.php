@@ -1,6 +1,6 @@
 	<section id="contact" class="uk-section">
 		<div class="uk-container">
-			<h2 class="uk-text-center">お見積もりご依頼</h2>
+			<h2 class="uk-text-center">お問い合わせ</h2>
 			<div class="uk-flex uk-flex-center uk-flex-middle">
 				<?php echo do_shortcode('[wpforms id="12" title="false" description="false"]'); ?>
 
@@ -22,17 +22,17 @@
 							<li class="uk-hidden"><a href="/category/tips_business/">ビジネス</a></li>
 							<li class=""><a href="/category/tips_marketing/">マーケティング</a></li>
 							<li class=""><a href="/category/tips_translation/">翻訳</a></li>
-							<li class="uk-hidden"><a href="/category/tips_game/">ゲーム</a></li>
+							<li class=""><a href="/category/tips_gamedev/">ゲーム開発</a></li>
 					</ul>
-	    	</div>
-	    	<div>
+				</div>
+				<div>
 					<h3>サービス</h3>
-	    		<ul class="uk-list uk-link-text">
-						<li><a href="/web_development/">ウェブサイト制作</a></li>
-						<li><a href="/marketing/">マーケティング支援</a></li>
-						<li><a href="/localization/">翻訳</a></li>
-	    		</ul>
-	    	</div>
+					<ul class="uk-list uk-link-text">
+							<li><a href="/web_development/">ウェブサイト制作</a></li>
+							<li class=""><a href="/#locagames">ゲーム販売支援</a></li>
+							<li><a href="/localization/">翻訳</a></li>
+					</ul>
+				</div>
 				<div>
 					<ul class="uk-list uk-link-text">
 						<li><a href="/company/">会社案内</a></li>

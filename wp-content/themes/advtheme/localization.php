@@ -11,8 +11,8 @@ get_header();
 		<div class="uk-container uk-height-1-1 uk-flex uk-flex-middle">
 			<div class="uk-child-width-1-1@m uk-child-width-1-1@s" uk-grid>
 				<div class=" ">
-					<h1 class="">サービスを世界へ届けよう</h1>
-					<div class="uk-text-lead	">ローカリゼーションを通じて、オンラインビジネスの多国籍化をサポートします</div>
+					<h1 class="">翻訳・ローカライズ</h1>
+					<div class="uk-text-lead	">ニーズに合わせた柔軟な翻訳を低価格で</div>
 					<div class="uk-margin-large-top">
 						<a class="white_button uk-margin-right" href="#contact">お見積もり</a>
 						<a class="dark_button" href="#pricing">料金例</a>
@@ -111,13 +111,12 @@ get_header();
 								<h3 class="uk-card-title">一般文書全般</h3>
 								<h4>10円/一語~</h4>
 		            <p>外国語→日本語</p>
-								<h4>7円/一文字~</h4>
+								<h4>8円/一文字~</h4>
 								<p>日本語→外国語</p>
 								<ul class="uk-list uk-margin-large uk-text-left">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>校正</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>文書フォーマットを指定可能</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>ネイティブ</li>
-										<li><span uk-icon="icon: check" class="uk-margin-right"></span>ローカリゼーション</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>Etc.</li>
 								</ul>
 								<a class="dark_button uk-width-medium" href="#contact">お見積もり</a>
@@ -127,17 +126,16 @@ get_header();
 				<div>
 		        <div class="uk-card uk-card-default uk-card-body price_box">
 							<div class="price_inner">
-								<h3 class="uk-card-title">ゲーム、フィクション</h3>
-								<h4>10円/一語~</h4>
+								<h3 class="uk-card-title">ゲーム翻訳</h3>
+								<h4>12円~/一語</h4>
 		            <p>外国語→日本語</p>
-								<h4>10円/一文字~</h4>
+								<h4>10円~/一文字</h4>
 								<p>日本語→外国語</p>
 								<ul class="uk-list uk-margin-large uk-text-left">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>校正</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>文書フォーマットを指定可能</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>ネイティブ</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>ローカリゼーション</li>
-										<li><span uk-icon="icon: check" class="uk-margin-right"></span>レーティングのご提案</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>スタイルガイド作成</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>Etc.</li>
 								</ul>

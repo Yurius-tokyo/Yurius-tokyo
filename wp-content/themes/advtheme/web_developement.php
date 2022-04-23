@@ -118,9 +118,9 @@ get_header();
 		        <div class="uk-card uk-card-default uk-card-body price_box">
 							<div class="price_inner">
 								<h3 class="uk-card-title">コーポレートサイト</h3>
-								<h4>約20万円~</h4>
-		            <p>5ページ以内の一般的なコーポレートサイト</p>
-								<p>制作期間: 1ヶ月~2ヶ月</p>
+								<h4>約28万円~</h4>
+		            <p>5ページのシンプルなコーポレートサイト</p>
+								<p>制作期間: 2ヶ月~</p>
 								<ul class="uk-list uk-margin-large">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>オリジナルデザイン</li>
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>CMS (WordPress)</li>
@@ -136,13 +136,12 @@ get_header();
 		        <div class="uk-card uk-card-default uk-card-body price_box">
 							<div class="price_inner">
 								<h3 class="uk-card-title">多言語ECサイト</h3>
-								<h4>約48万円~</h4>
-		            <p>10カテゴリ、100商品程度のECサイト。WooCommerceまたはその他のECシステムを組み込んで制作</p>
-								<p>制作期間: 2ヶ月~</p>
+								<h4>約57万円~</h4>
+		            <p>中規模の多言語ECサイト</p>
+								<p>制作期間: 3ヶ月~</p>
 								<ul class="uk-list uk-margin-large">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>オリジナルデザイン</li>
-								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>CMS (WordPress)</li>
-								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>ECシステム組み込み</li>
+								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>CMS (Shopify)</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>レスポンシブ</li>
 										<li><span uk-icon="icon: check" class="uk-margin-right"></span>日本語、英語</li>
 								</ul>
@@ -154,8 +153,8 @@ get_header();
 		        <div class="uk-card uk-card-default uk-card-body price_box">
 							<div class="price_inner">
 								<h3 class="uk-card-title">ランディングページ</h3>
-								<h4>約10万円~</h4>
-		            <p>既存のサイト内、または単体でランディングページ1枚を制作</p>
+								<h4>約13万円~</h4>
+		            <p>ペライチのランディングページを制作</p>
 								<p>制作期間: 1ヶ月~</p>
 								<ul class="uk-list uk-margin-large">
 								    <li><span uk-icon="icon: check" class="uk-margin-right"></span>オリジナルデザイン</li>
@@ -217,8 +216,7 @@ get_header();
 					<dt class="uk-text-lead">Q. 今あるサイトを多言語対応にできますか?</dt>
 			    <dd>A. はい。サイトを拝見してから最適な方法をご提案します。</dd>
 					<dt class="uk-text-lead">Q. 翻訳料金はいくらですか?</dt>
-			    <dd>A. ウェブサイト制作とセットでご依頼頂くと、1ページ1言語あたり3,000円の固定料金です。※ランディングページ、専門文書・法務文書が含まれるページは別途お見積もりとなります
-</dd>
+			    <dd>A. ウェブサイト制作とセットでサイトの翻訳をご依頼の場合は割引価格で、1文字6円~となります。</dd>
 					<dt class="uk-text-lead">Q. どの言語に翻訳できますか?</dt>
 			    <dd>A. 英語、中国語、スペイン語はセット料金で対応可能です。他の言語は追加料金で対応できる場合がありますので、お問い合わせください。</dd>
 			</dl>

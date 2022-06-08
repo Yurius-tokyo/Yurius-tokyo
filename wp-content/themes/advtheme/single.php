@@ -46,6 +46,35 @@ get_header();
 						</div>
 
 
+						<div id="post-recommended" class="uk-card uk-card-default uk-card-body">
+
+							<div class="">
+								<h3 class="uk-card-title">この記事もおすすめ</h3>
+							</div>
+							<ul class="uk-list uk-list-divider">
+							<?php
+
+							$args_r = array(
+								'posts_per_page' => 5,
+								'orderby' => 'post_date',
+								'order' => 'DESC',
+								'cat' => $cat_id
+							);
+							$the_query_r = new WP_Query($args_r);
+							
+							if ( $the_query_r->have_posts() ) :
+								while ( $the_query_r->have_posts() ) : $the_query_r->the_post();
+
+							?>
+									<li><a href="<?php the_permalink(); ?>" class=""><?php the_title(); ?></a></li>
+							
+							<?php endwhile; endif;
+							wp_reset_postdata();
+							?>
+							</ul>
+						</div>
+
+
 						<div id="author" class="uk-card uk-card-body uk-hidden">
 							<div class="uk-flex uk-flex-middle uk-text-center">
 								<div class="uk-width-2-4@m">
@@ -63,16 +92,30 @@ get_header();
 		        </div>
 
 						<div id="lead" class="uk-card uk-card-body uk-text-center uk-margin-top box_shadow">
-							<p class="">
-								ホームページ制作、多言語サイト制作のご依頼を承っています。お気軽にご相談ください。
-							</p>
+							<?php
+							switch ($cat_id) {
+								case 39:
+									?>
+									<p class="">
+										ゲームの翻訳を承っています。お気軽にご相談ください。
+										パブリッシング、その他ゲーム開発についての相談もまずはご連絡ください。
+									</p>
+									<?php
+									break;
+									default:
+									?>
+									<p class="">
+										ウェブ制作、多言語サイト制作のご依頼を承っています。お気軽にご相談ください。
+									</p>
+									<?php
+							}
+							?>
+							
 							<a href="#contact" uk-icon="icon: chevron-down; ratio: 2.0" uk-scroll></a>
 
 						</div>
-					<?php endwhile; endif; ?>
-
-
-					<?php wp_reset_postdata(); ?>
+						<?php endwhile; endif; ?>
+						<?php wp_reset_postdata(); ?>
 				</div>
 
 				<?php get_sidebar(); ?>

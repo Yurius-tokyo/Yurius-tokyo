@@ -1,14 +1,4 @@
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteRule . /index.php [L]
-
-# RewriteCond %{HTTPS} off
-# RewriteCond %{HTTP_HOST} adventuresjp.com
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
+# END W3TC Page Cache core
 # BEGIN WordPress
 # "BEGIN WordPress" から "END WordPress" までのディレクティブ (行) は
 # 動的に生成され、WordPress フィルターによってのみ修正が可能です。
@@ -23,3 +13,9 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+php_value upload_max_filesize 300M
+php_value post_max_size 128M
+php_value memory_limit 256M
+php_value max_execution_time 300
+php_value max_input_time 300
